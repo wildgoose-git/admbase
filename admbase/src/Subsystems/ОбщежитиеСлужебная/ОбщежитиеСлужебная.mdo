@@ -15,4 +15,5 @@
   <content>Document.ВыселениеСотрудников</content>
   <content>Catalog.КомнатыВагоны</content>
   <content>CommonModule.ОбщежитиеФункцииСервер</content>
+  <content>DataProcessor.ПечатьДокументовУчетаСотрудников</content>
 </mdclass:Subsystem>

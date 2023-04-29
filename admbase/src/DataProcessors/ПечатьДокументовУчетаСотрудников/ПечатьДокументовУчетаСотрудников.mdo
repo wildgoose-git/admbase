@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3bf1261-027c-42ff-9fe3-94ce9f2e43cf">
+  <producedTypes>
+    <objectType typeId="4c0e40f3-cc6b-456d-bbc0-072c6f60bfd3" valueTypeId="999c7926-0a77-45d9-a4e1-55dc0af59d09"/>
+    <managerType typeId="8369d80b-9903-4fe2-b2f6-fc9406074423" valueTypeId="de316bd0-cd94-4547-b12c-2bcae6a1a2a9"/>
+  </producedTypes>
+  <name>ПечатьДокументовУчетаСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать документов учета сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>

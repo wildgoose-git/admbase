@@ -2259,6 +2259,7 @@
   <dataProcessors>DataProcessor.УстановкаОбновлений</dataProcessors>
   <dataProcessors>DataProcessor.РасчетРабочегоВремени</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоСтоловая</dataProcessors>
+  <dataProcessors>DataProcessor.ПечатьДокументовУчетаСотрудников</dataProcessors>
   <informationRegisters>InformationRegister.АдминистративнаяИерархия</informationRegisters>
   <informationRegisters>InformationRegister.АдресныеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>

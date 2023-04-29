@@ -20,7 +20,6 @@
   <defaultRoles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</defaultRoles>
   <vendor>АО Монолитстрой</vendor>
   <version>2.0.0.1</version>
-  <updateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</updateCatalogAddress>
   <includeHelpInContents>true</includeHelpInContents>
   <usedMobileApplicationFunctionalities>
     <functionality>
@@ -45,10 +44,6 @@
     <key>ru</key>
     <value>АО Монолитстрой</value>
   </copyright>
-  <vendorInformationAddress>
-    <key>ru</key>
-    <value>http://www.1c.ru</value>
-  </vendorInformationAddress>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>UseWithWarnings</modalityUseMode>
@@ -2437,6 +2432,7 @@
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.РазмещениеСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.СведенияОСотрудниках</informationRegisters>
+  <informationRegisters>InformationRegister.ЗанятыеМестаОбщежитие</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИзготовлениеБлюд</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗакупкиУПоставщиков</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиПродуктовНаСкладах</accumulationRegisters>

@@ -119,6 +119,7 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Сотрудники.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Сотрудники.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Сотрудники.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="f24f18d4-2cb8-4394-9d62-cb6874413e1c">
     <name>Фамилия</name>
     <synonym>
@@ -256,6 +257,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1650766d-d7a2-478e-87b3-54c8c1785f05">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

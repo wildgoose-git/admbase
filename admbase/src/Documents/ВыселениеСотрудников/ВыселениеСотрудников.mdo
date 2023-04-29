@@ -68,6 +68,7 @@
   <defaultListForm>Document.ВыселениеСотрудников.Form.ФормаСписка</defaultListForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>InformationRegister.РазмещениеСотрудников</registerRecords>
+  <registerRecords>InformationRegister.ЗанятыеМестаОбщежитие</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="66c47d32-9a64-4443-bad1-66c927f77551">

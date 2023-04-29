@@ -14,7 +14,6 @@
     <key>ru</key>
     <value>Сведения о сотрудниках</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <standardAttributes>
     <dataHistory>Use</dataHistory>

@@ -16,4 +16,5 @@
   <content>Catalog.КомнатыВагоны</content>
   <content>CommonModule.ОбщежитиеФункцииСервер</content>
   <content>DataProcessor.ПечатьДокументовУчетаСотрудников</content>
+  <content>InformationRegister.ЗанятыеМестаОбщежитие</content>
 </mdclass:Subsystem>

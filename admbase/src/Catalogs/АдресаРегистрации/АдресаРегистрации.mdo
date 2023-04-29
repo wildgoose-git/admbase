@@ -106,44 +106,6 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.АдресаРегистрации.Form.ФормаЭлемента</defaultObjectForm>
-  <attributes uuid="f6620407-cd21-4cc3-991e-48ffd0d53275">
-    <name>КоличествоКомнат</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество комнат</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>3</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="67fc2c2b-f988-43ee-ae17-7ae129ca4151">
-    <name>КоличествоМестВКомнате</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество мест в комнате</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>2</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <forms uuid="4f5e2418-4256-4d2a-aa3a-60784df3eb36">
     <name>ФормаЭлемента</name>
     <synonym>

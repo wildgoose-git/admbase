@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f94d0fd-381b-4bb4-b1e6-87673c4129c1">
+  <producedTypes>
+    <objectType typeId="aa42785c-ecad-4acf-be42-8101b07fb719" valueTypeId="5de83175-3aea-4de5-95fc-7a863859ec7b"/>
+    <managerType typeId="6b0a9080-7a2a-4ee8-80a0-f84a7dcf1a06" valueTypeId="6306d67b-d1ea-44dd-a04a-7655184a42be"/>
+  </producedTypes>
+  <name>ГрафикиРаботыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работы сотрудников</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ГрафикиРаботыСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="26e34937-cd67-4e9c-a067-bff661f4a902">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="c60cd138-fb07-4d61-8ada-2e69ba44010b">
+    <name>ГрафикиРаботыСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Графики работы сотрудников</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

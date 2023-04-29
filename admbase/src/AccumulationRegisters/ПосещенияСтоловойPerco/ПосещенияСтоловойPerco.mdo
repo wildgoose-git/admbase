@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6feec21-1d73-406d-a6aa-d18a89e5f845">
+  <producedTypes>
+    <selectionType typeId="801452da-f265-403d-81b6-bdf5c4049e0d" valueTypeId="3f0a4845-bcd0-4dce-b2e0-09433dbdb69c"/>
+    <listType typeId="b0f61bbf-dc30-44d1-ba14-99f6482f89d3" valueTypeId="2596569d-fa83-4843-bd24-47983ecff157"/>
+    <managerType typeId="bb04316c-cdbd-4fbe-8cb9-8ee420f39e59" valueTypeId="325c57c0-42a9-486d-9af2-eba02d3e31ae"/>
+    <recordSetType typeId="f164c00e-8fbb-4a9a-aa19-cba56b171aaf" valueTypeId="2412955b-b470-4f7d-8f98-24a4e15037d6"/>
+    <recordKeyType typeId="8c7e4a79-9b60-4e91-abbd-162f451482de" valueTypeId="8ded0267-323d-4418-9635-2f34bca613f8"/>
+    <recordType typeId="18c2b2f9-d764-4283-b28d-3ecf5b6b14b0" valueTypeId="d76e3967-0196-46c8-bb6d-4ed81d876cc7"/>
+  </producedTypes>
+  <name>ПосещенияСтоловойPerco</name>
+  <synonym>
+    <key>ru</key>
+    <value>Посещения столовой Perco</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5b7876d8-900a-41ef-8bca-30ab413d677d">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9617e5fe-abb1-4937-a031-bc302153f8af">
+    <name>КатегорияМеню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория меню</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииМеню</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b8e9378c-adb8-4e9d-9e44-1ecabd4f91cb">
+    <name>ВидСтола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид стола</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтолов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3cc2cf41-ba3d-484b-9cc4-6c534af4d288">
+    <name>Меню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Меню</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>ВидНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.ВидыНоменклатуры.Меню</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="74adb810-ba0e-430c-a59a-b1909c48fd33">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8a2f0bfc-f967-487b-a154-ca67af1adc0d">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

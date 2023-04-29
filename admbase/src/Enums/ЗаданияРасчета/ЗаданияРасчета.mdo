@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbadff25-729a-46e2-8ef1-8fbde71d04f2">
+  <producedTypes>
+    <refType typeId="2c6b5e33-8dff-4f84-ab37-6413f9f3235c" valueTypeId="0c28a196-747b-4562-b501-d60570f902bc"/>
+    <listType typeId="6aee86af-15cb-4231-b9ac-d50450821acd" valueTypeId="a24baa27-92cb-4ef0-8ea9-93048655ab80"/>
+    <managerType typeId="1ece2fd7-d18e-4484-9be5-da5394cf4526" valueTypeId="111ad031-3077-42b5-bef6-850b11e16408"/>
+  </producedTypes>
+  <name>ЗаданияРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания расчета</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="28ccaff9-4b22-44ba-8d3c-25f679666ecc">
+    <name>ЗагрузкаДанныхПроходовРогачево</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных проходов (Рогачево)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="46f12ec4-dad8-47ca-8679-8d6a2cc88dc8">
+    <name>ЗагрузкаДанныхПроходовМосква</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных проходов (Москва)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2665776d-6424-4be8-80a2-131d11a86af8">
+    <name>ЗагрузкаДокументовERP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка документов ERP</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b28fc28d-9acb-486a-8e1c-3b7daf7035a7">
+    <name>ЗагрузкаДокументовDMC</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка документов DMC</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="798e91b2-af0d-469d-b30b-4cf2e45d69c6">
+    <name>ОформлениеОбъяснений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оформление объяснений</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="16e25ed2-e35a-4a0b-8341-b8ff18749c2f">
+    <name>КонтрольСпискаСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль списка сотрудников</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="93bafe67-7db2-434e-8e4f-1c8df8d06620">
+    <name>ПроверкаГрафиковРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка графиков работы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b7a46445-4590-4823-88ac-b66fec6c7311">
+    <name>ПроверкаИндивидуальныхГрафиковРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка индивидуальных графиков работы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="64e23c72-5c40-4175-ab8c-7ba1cca8af15">
+    <name>ПроверкаСостоянияСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка состояния сотрудников</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="48653a13-b5a2-4b77-a224-bd15d6f25498">
+    <name>РасчетРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет рабочего времени</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

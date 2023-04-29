@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32b16e39-329b-4857-abe2-14906cf3c17c">
+  <name>УчетРабочегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет рабочего времени</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.History</picture>
+  </picture>
+  <subsystems>ЗагрузкаДанных</subsystems>
+  <subsystems>РасчетРабочегоВремени</subsystems>
+  <subsystems>Служебная</subsystems>
+  <subsystems>НСИУчетВремени</subsystems>
+  <subsystems>Календари</subsystems>
+</mdclass:Subsystem>

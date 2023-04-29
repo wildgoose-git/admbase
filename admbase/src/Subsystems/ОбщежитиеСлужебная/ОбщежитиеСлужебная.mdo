@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="893628ed-5908-4eea-986b-b9907119a00c">
+  <name>ОбщежитиеСлужебная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общежитие служебная</value>
+  </synonym>
+  <content>Catalog.ЗагружаемыеФИОСотрудников</content>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.АдресаРегистрации</content>
+  <content>InformationRegister.РазмещениеСотрудников</content>
+  <content>InformationRegister.СведенияОСотрудниках</content>
+  <content>Document.ЗаселениеСотрудников</content>
+  <content>Document.ПеремещениеСотрудников</content>
+  <content>Document.ВыселениеСотрудников</content>
+  <content>Catalog.КомнатыВагоны</content>
+  <content>CommonModule.ОбщежитиеФункцииСервер</content>
+</mdclass:Subsystem>

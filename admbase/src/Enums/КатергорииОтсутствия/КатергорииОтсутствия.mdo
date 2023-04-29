@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f569a92-4312-4775-848b-48bbde7eef91">
+  <producedTypes>
+    <refType typeId="2d815a7d-c238-4d16-a4ed-72ab6da4c160" valueTypeId="923a2416-9be0-4f50-9fc8-1e09a0c6c5ca"/>
+    <listType typeId="e6e8efd6-5a1b-45f1-b569-ea2b20dc7b5d" valueTypeId="210408e4-bbea-4d21-90fa-62680efee5d5"/>
+    <managerType typeId="0ec2da59-2b66-463c-afac-ec525c506aa9" valueTypeId="aefd32b5-078d-4b80-adba-a1fc3aedb88e"/>
+  </producedTypes>
+  <name>КатергорииОтсутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Катергории отсутствия</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="49c5637a-1b73-4fd7-b88b-2bf8d48cc7e1">
+    <name>РабочееВремяЗаТерриторией</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее время за территорией</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6cb6996b-f092-4daa-a983-1845aa2ab7e5">
+    <name>Отсутствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3f04df6c-1893-4c6d-803d-a7e13cb92584">
+    <name>КорректировкаГрафика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировка графика</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="75161eef-6df4-4a6d-bead-6a3f5535b7ee">
+    <name>НеУчитывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

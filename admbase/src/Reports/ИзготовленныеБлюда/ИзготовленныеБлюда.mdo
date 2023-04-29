@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57ab395b-8f6d-4ccb-88da-b2d04715f92a">
+  <producedTypes>
+    <objectType typeId="c18d7071-8e22-4e83-ac9a-8213b36dc1c6" valueTypeId="a76e0399-7751-4cd9-9856-c55c0880fc89"/>
+    <managerType typeId="c0dabcc0-2b1f-4cf2-ae8f-4100d11649cb" valueTypeId="e699fae9-37bf-495f-8895-9ad7fc176669"/>
+  </producedTypes>
+  <name>ИзготовленныеБлюда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изготовленные блюда</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ИзготовленныеБлюда.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="5aa44f0a-278f-4a73-9e3a-2cc8c56c5aee">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

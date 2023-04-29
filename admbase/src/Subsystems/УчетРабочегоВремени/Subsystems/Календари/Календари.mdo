@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1ec884a-7e91-481c-99d9-188032771a4b">
+  <name>Календари</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календари</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.СхемыРаботы</content>
+  <content>Catalog.Календари</content>
+  <content>Catalog.ПроизводственныеКалендари</content>
+  <parentSubsystem>Subsystem.УчетРабочегоВремени</parentSubsystem>
+</mdclass:Subsystem>

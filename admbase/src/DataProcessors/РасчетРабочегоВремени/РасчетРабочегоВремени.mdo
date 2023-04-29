@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ff05805-ada8-439a-8c21-fb624553ef29">
+  <producedTypes>
+    <objectType typeId="32577130-5356-4a53-8960-211ea78f4924" valueTypeId="57b6c16d-7ef9-4c1d-a522-260977c527e3"/>
+    <managerType typeId="2aad7347-5063-4680-8702-463cfe082c08" valueTypeId="84fcfa4a-e7e7-49e4-8949-06eefec688dc"/>
+  </producedTypes>
+  <name>РасчетРабочегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет рабочего времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РасчетРабочегоВремени.Form.ФормаРасчета</defaultForm>
+  <forms uuid="89a189a8-b03a-48d7-9935-403b1ea516fc">
+    <name>ФормаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="b8484941-92ca-4cbd-8eb6-29ba3dcb4aaf">
+    <name>РасчетРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет рабочего времени</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

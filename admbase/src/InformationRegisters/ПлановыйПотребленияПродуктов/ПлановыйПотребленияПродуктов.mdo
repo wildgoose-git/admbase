@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c05b8f38-2b9c-4a12-bd07-f0e8c2445805">
+  <producedTypes>
+    <selectionType typeId="ae12d005-6e19-41ae-84ad-89370d0bbbe0" valueTypeId="97cde155-6065-49f1-82ce-b31e1f4f0c96"/>
+    <listType typeId="1e764847-98ea-4c3b-836d-23baccef0fa8" valueTypeId="0f67e7e7-368d-4059-8547-746281077568"/>
+    <managerType typeId="acdfc0a8-bfe0-4ea4-92ac-c887be9117b5" valueTypeId="5c636e76-7c1b-45d7-832c-ea3221aa7dba"/>
+    <recordSetType typeId="37f919eb-87b1-4306-bdcf-fd5e099df2a8" valueTypeId="ed33be0b-3298-4d61-b2bc-11259c86be0c"/>
+    <recordKeyType typeId="b86bc5d4-b96a-44a3-b7a6-f0e9ff9d7212" valueTypeId="7e6cdc9c-4544-4e85-9d20-3a9d0371e96c"/>
+    <recordType typeId="37045109-8890-4a0d-a61e-50f1c5c84708" valueTypeId="62e72b5e-f6c4-41ae-ad00-c0a22586afa5"/>
+    <recordManagerType typeId="cee4d9f4-7719-4698-8ca5-bd4fd0afbb41" valueTypeId="ccee2ce1-7a2b-49f2-a450-385d1c916bd9"/>
+  </producedTypes>
+  <name>ПлановыйПотребленияПродуктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановый потребления продуктов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Плановый потребления продуктов</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Плановый потребления продуктов</value>
+  </listPresentation>
+  <resources uuid="84d03a03-7aa1-435a-9a49-cb82b321030c">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="82fe4bd8-d9db-4d52-ae72-bac100f2591d">
+    <name>КатегорияМеню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория меню</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииМеню</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b297a1d6-daaf-4209-aa95-15373039cf2a">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5819d3ff-6051-48b1-ada4-12b2737b6e98">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>ВидНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.ВидыНоменклатуры.Продукты</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="77708445-9107-4d64-bc14-f22fa574fb4d">
+    <name>ВидНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

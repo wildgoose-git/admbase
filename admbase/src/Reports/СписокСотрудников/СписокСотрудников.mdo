@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eab6e9b-659b-475a-8c2c-9a7079089ad8">
+  <producedTypes>
+    <objectType typeId="8070b0f8-e38f-4d70-9339-74e00ecee453" valueTypeId="f5665716-8aff-48f4-9037-2a25e4214062"/>
+    <managerType typeId="8a06191d-a1f5-4a4f-8b5c-91b1276978be" valueTypeId="4bf54fe5-5971-47a6-a7aa-35cdc156c307"/>
+  </producedTypes>
+  <name>СписокСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+</mdclass:Report>

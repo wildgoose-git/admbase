@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b11b95d7-158a-4b48-9470-c0f138b75c74">
+  <producedTypes>
+    <objectType typeId="27ada08c-f7ab-4a16-9560-6e7772b6a3b1" valueTypeId="57fef940-b813-44fc-bbf0-8c3a27179e58"/>
+    <managerType typeId="61e93c73-1085-49d1-924f-9acdf4d22cbe" valueTypeId="112c48c4-521f-4001-9266-83315d85039e"/>
+  </producedTypes>
+  <name>ПроверкаКорректностиВводаДанныхПоСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка корректности ввода данных по сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПроверкаКорректностиВводаДанныхПоСотруднику.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="d43dd83c-5a8f-49f7-b04a-138be5cf2c05">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f8b8c36-a3a7-4309-a72f-9979a1bce675">
+  <producedTypes>
+    <refType typeId="2801265b-81e8-4f7c-8f1a-97670a40013b" valueTypeId="995c27e3-bba9-4996-9f30-3dafbfee4615"/>
+    <listType typeId="6d88ace5-630d-457b-8d86-ef78b95fcc14" valueTypeId="848c03e2-470c-4f11-951e-5cb9079642c3"/>
+    <managerType typeId="ab505bab-f9bb-4927-904e-a0164a13cdc4" valueTypeId="e49a6040-5e73-4ad7-ab0c-f6361fd880ee"/>
+  </producedTypes>
+  <name>ВидыСтолов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды столов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="49dfc018-7f05-46d1-b4cd-fc9646d56afa">
+    <name>Завтрак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завтрак</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="55bd2c6a-6bd2-4b57-a8ea-0505bff71fe7">
+    <name>Обед</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обед</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="da7ac069-d1f8-40f7-8554-9f3077db518c">
+    <name>Ужин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ужин</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a6293222-d45a-4232-b2ce-8d2219cd71d3">
+    <name>ОбедНочь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обед ночь</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

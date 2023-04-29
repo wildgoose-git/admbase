@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff4a0ad6-0ef0-43ca-b94d-121a88a326c1">
+  <producedTypes>
+    <refType typeId="9a6f7d0e-c4d9-472a-97cb-b846fc16a92e" valueTypeId="1bb3c7af-3167-47b4-bc21-91abda776bc6"/>
+    <listType typeId="d5e30676-48ad-405c-9d13-fbb1dd2fcda1" valueTypeId="281e0703-16b0-4457-82cd-c2a5e9cf142c"/>
+    <managerType typeId="f64c64e3-0e1c-42d2-b473-75ff3b58a6a7" valueTypeId="a736304e-65a4-4453-838e-15ea35d0e150"/>
+  </producedTypes>
+  <name>БазыИсточники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базы источники</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="54e0ffb1-0188-49be-913f-dd88c086aa24">
+    <name>Perco</name>
+    <synonym>
+      <key>ru</key>
+      <value>Perco</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f810f260-eda2-4d01-924b-c9fe80295232">
+    <name>ERP</name>
+    <synonym>
+      <key>ru</key>
+      <value>ERP</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5ef06db0-81ab-44ab-b128-ec4892be5e0c">
+    <name>DMC</name>
+    <synonym>
+      <key>ru</key>
+      <value>DMC</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66274257-9f33-43bf-a9b8-dc922065bd00">
+  <producedTypes>
+    <selectionType typeId="0d7d2d25-3cee-42c5-8740-8dd9982b5eff" valueTypeId="5b722357-d224-47b8-86d8-05a41343751a"/>
+    <listType typeId="899dd400-3cb2-416e-a3d8-b8853b83f5b3" valueTypeId="3316b5e2-e526-495b-97f5-ad3b5729b4a0"/>
+    <managerType typeId="e1b54517-a386-43f2-835b-d033e4e33f8b" valueTypeId="eb97eeca-c196-44a0-89fb-09719deaeeb5"/>
+    <recordSetType typeId="ae660695-8051-4b06-ad32-e8278acfabdb" valueTypeId="629ea6c3-710e-43fc-9174-ae97bb360a8f"/>
+    <recordKeyType typeId="63849d4b-c516-4dda-a9d7-1e7cd199abec" valueTypeId="24287cff-ae03-482e-8211-a200ec2dacda"/>
+    <recordType typeId="e35baf2d-d3ac-4f4e-8602-343826a291c9" valueTypeId="e92b3f1a-5fa3-4f92-80be-1d4a5644a49d"/>
+    <recordManagerType typeId="d76d485c-e156-4aeb-a555-26acef4c0e22" valueTypeId="c0f64c3f-717e-4db3-890c-0b9b57ee96c9"/>
+  </producedTypes>
+  <name>РасписаниеРаботыСтоловой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расписание работы столовой</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Расписание работы столовой</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Расписание работы столовой</value>
+  </listPresentation>
+  <resources uuid="c537356e-0adb-4aed-820f-a552c07d3011">
+    <name>ВремяНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=ЧЧ:мм</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=ЧЧ:мм</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5f83b16e-5cab-441b-8350-3c11bfcc1bbe">
+    <name>ВремяОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=ЧЧ:мм</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=ЧЧ:мм</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6e87a5eb-2382-4456-af42-a09135b0d6ee">
+    <name>ВидСтола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид стола</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтолов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

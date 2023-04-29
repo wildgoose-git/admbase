@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Document.НазначениеИндивидуальныхГрафиков.StandardCommand.OpenList</commands>
+      <commands>Document.НазначениеПостоянныхГрафиков.StandardCommand.OpenList</commands>
+      <commands>Document.ОтражениеСостоянийСотрудников.StandardCommand.OpenList</commands>
+      <commands>Catalog.СхемыРаботы.StandardCommand.OpenList</commands>
+      <commands>Catalog.Сотрудники.StandardCommand.OpenList</commands>
+      <commands>Catalog.Подразделения.StandardCommand.OpenList</commands>
+      <commands>Catalog.Должности.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПроизводственныеКалендари.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

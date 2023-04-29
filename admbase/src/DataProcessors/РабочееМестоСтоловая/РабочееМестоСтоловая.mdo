@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02f6a24e-e0d3-4b45-a8c8-fe63ebfe9cbe">
+  <producedTypes>
+    <objectType typeId="76141016-028f-4358-8be7-9127670567b1" valueTypeId="fbfeabb1-51a0-4307-92f9-9102500b592d"/>
+    <managerType typeId="f174f95b-8948-44df-8dec-18f1a69fa8d8" valueTypeId="e3f8183b-c5c0-4cb3-83fc-70342906db11"/>
+  </producedTypes>
+  <name>РабочееМестоСтоловая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее место столовая</value>
+  </synonym>
+  <defaultForm>DataProcessor.РабочееМестоСтоловая.Form.Форма</defaultForm>
+  <forms uuid="cdfb76da-463b-4d26-9a21-d197ee60fad2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="016e9428-686c-4a67-a864-d66d3435fb08">
+    <name>РМСтоловая</name>
+    <synonym>
+      <key>ru</key>
+      <value>РМ Столовая</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

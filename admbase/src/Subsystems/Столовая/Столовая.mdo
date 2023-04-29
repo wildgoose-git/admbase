@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ebef743b-bcc9-41f5-ade0-b4f9885d264f">
+  <name>Столовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Столовая</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Столовая</picture>
+  </picture>
+  <content>DataProcessor.РабочееМестоСтоловая</content>
+  <content>Report.ИзготовленныеБлюда</content>
+  <content>Report.ОстаткиПродуктов</content>
+  <content>Report.ЗакупкиПродуктов</content>
+  <content>Report.СоставМеню</content>
+  <content>CommonCommand.ПанельОтчетовСтоловая</content>
+  <content>Report.РасчетыПоСотрудникам</content>
+  <content>Report.СоставБлюда</content>
+  <subsystems>ДвиженияПродуктов</subsystems>
+  <subsystems>НСИСтоловая</subsystems>
+  <subsystems>ПересчетыПродуктов</subsystems>
+  <subsystems>СтоловаяPerco</subsystems>
+  <subsystems>СтоловаяФинансы</subsystems>
+</mdclass:Subsystem>

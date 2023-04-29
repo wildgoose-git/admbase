@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff3f4ec5-938b-4467-939c-6f6a7e8ade3f">
+  <producedTypes>
+    <objectType typeId="288db706-7f1a-4604-b3e9-7c259eba7eed" valueTypeId="9029ad27-3c68-4111-915b-4a4aafef9f4d"/>
+    <managerType typeId="05b6a19f-63b4-4df4-9216-7e3aab90275c" valueTypeId="2f5038da-6478-4cb4-86d9-1eff07fb67fd"/>
+  </producedTypes>
+  <name>УчетРабочегоВремениСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет рабочего времени сотрудников</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.УчетРабочегоВремениСотрудников.Template.СхемаКомпоновкиДанныхОтбор</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="8338fb1e-7ade-4a67-98b6-2d6c65e6ffcc">
+    <name>СхемаКомпоновкиДанныхОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных отбор</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e2c8b4a1-6ac2-43ef-b884-08dc3561b73a">
+    <name>СхемаКомпоновкиДанныхДетали</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных детали</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d98a3bb6-d9ae-4ec6-8db6-19c15d15b989">
+    <name>СхемаКомпоновкиДанныхСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных суммы</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a22b7abd-eef2-4e24-9c31-f69dcda4ae59">
+    <name>СхемаКомпоновкиДанныхШапки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных шапки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5168f530-c506-4f1e-97dd-528c1108ace6">
+    <name>УчетРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет рабочего времени</value>
+    </synonym>
+  </templates>
+  <commands uuid="99a7c01e-5748-4f1c-a93c-ce14a04c64d5">
+    <name>УчетРабочегоВремениСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет рабочего времени сотрудников</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

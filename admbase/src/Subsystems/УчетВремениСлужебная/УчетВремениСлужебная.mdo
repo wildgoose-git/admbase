@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05557996-1de0-42b6-959c-3ef44b96ff52">
+  <name>УчетВремениСлужебная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет времени служебная</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Включены все объекты по учету времени</value>
+  </explanation>
+  <content>CommonModule.КонсолидацияОбновлениеИнформационнойБазы</content>
+  <content>CommonModule.КонсолидацияРасчет</content>
+  <content>CommonModule.КонсолидацияРегистрЗаданий</content>
+  <content>CommonModule.КонсолидацияЗагрузкаДанных</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.Подразделения</content>
+  <content>Catalog.ПричиныОтсутсвия</content>
+  <content>Catalog.СхемыРаботы</content>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.ТипыДокументов</content>
+  <content>Catalog.УчетныеДанныеПодключений</content>
+  <content>Document.ЗаявкиDMC</content>
+  <content>Document.НазначениеИндивидуальныхГрафиков</content>
+  <content>Document.НазначениеПостоянныхГрафиков</content>
+  <content>Document.ОбъяснительнаяЗаписка</content>
+  <content>Document.ОтклоненияERP</content>
+  <content>Document.ОтражениеСостоянийСотрудников</content>
+  <content>Document.ПроходыPerco</content>
+  <content>Document.РасчетРабочегоВремени</content>
+  <content>Enum.БазыИсточники</content>
+  <content>Enum.ЗаданияРасчета</content>
+  <content>Enum.КатергорииОтсутствия</content>
+  <content>Enum.Территории</content>
+  <content>Enum.ТипыПодключения</content>
+  <content>Report.ГрафикиРаботОтраженныеПриРасчете</content>
+  <content>Report.ГрафикиРаботыСотрудников</content>
+  <content>Report.СостояниеСотрудников</content>
+  <content>Report.СписокСотрудников</content>
+  <content>Report.УчетРабочегоВремениСотрудников</content>
+  <content>Report.ПроверкаКорректностиВводаДанныхПоСотруднику</content>
+  <content>DataProcessor.РасчетРабочегоВремени</content>
+  <content>InformationRegister.ГрафикиРаботИндивидуальные</content>
+  <content>InformationRegister.ГрафикиРаботПостоянные</content>
+  <content>InformationRegister.ЗаданияНаРасчетРабочегоВремени</content>
+  <content>InformationRegister.СостояниеСотрудников</content>
+  <content>InformationRegister.УчетРабочегоВремениСотрудников</content>
+  <content>InformationRegister.СводкаРабочегоВремени</content>
+  <content>CommonForm.ВыборПериода</content>
+  <content>CommonModule.СправочникиЗагрузкаИзВнешнихИсточниковПолныеПрава</content>
+</mdclass:Subsystem>

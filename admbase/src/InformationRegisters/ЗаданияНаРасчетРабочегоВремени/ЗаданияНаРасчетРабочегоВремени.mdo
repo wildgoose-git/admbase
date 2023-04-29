@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30f0d222-a810-4170-9899-3495c5111948">
+  <producedTypes>
+    <selectionType typeId="2a4fff09-1eab-44fc-9eb4-e17c6215c1b7" valueTypeId="3d9f1d73-c6f8-410f-86f5-30947f98d229"/>
+    <listType typeId="2f626af3-16c9-4f77-aacc-45045bce0281" valueTypeId="8f92f74a-003e-41be-88dc-2a545daec90e"/>
+    <managerType typeId="9bc5f37d-e413-47b2-b8cb-f90bf7cdf649" valueTypeId="cb758703-9514-4f76-a0f5-b67ddec7670f"/>
+    <recordSetType typeId="ab60a3a3-c830-4273-a2d3-e79afb4de698" valueTypeId="84e5f515-9a36-4d5d-80d8-87ce571dca1b"/>
+    <recordKeyType typeId="1fbc8031-e45a-4997-93c5-16290f5e2a31" valueTypeId="60e79a2a-7be7-4a16-9632-e6b29dc53e9c"/>
+    <recordType typeId="6f1ec2ff-f717-43b1-963f-f4fd8dd8ef9a" valueTypeId="db00fb5f-d0de-476e-90f3-e5bf0e29fc8e"/>
+    <recordManagerType typeId="ad6c5896-cff7-4da8-ae3c-3ed70237246d" valueTypeId="b1921c69-eba6-4e62-94a3-dd33e49213d0"/>
+  </producedTypes>
+  <name>ЗаданияНаРасчетРабочегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания на расчет рабочего времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Задания на расчет рабочего времени</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Задания на расчет рабочего времени</value>
+  </listPresentation>
+  <resources uuid="413a3312-a180-4a5e-b1dd-2b1fd4f0c73c">
+    <name>Выполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9691f30a-6d59-400c-908d-e3bc748e3533">
+    <name>НеВыполнять</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выполнять</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="93811bcc-e5bd-4a4d-b337-1e4087916b08">
+    <name>НомерЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер задания</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26b1208e-02e4-4e61-958a-a18bcad1b6ca">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6f329353-8978-4663-a58d-841356619203">
+    <name>РасчетМесяцаВыполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет месяца выполнен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="54325683-ba1e-4cda-aad3-3215804d2aa4">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c7db33e4-3111-4cb1-b3e9-56927e35e40b">
+    <name>ЗаданиеРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задание расчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЗаданияРасчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

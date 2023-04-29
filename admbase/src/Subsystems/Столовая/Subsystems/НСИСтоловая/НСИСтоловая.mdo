@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4beb9600-14f9-4a14-8825-fb4fced006c1">
+  <name>НСИСтоловая</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.ВидыНоменклатуры</content>
+  <content>Catalog.МестаХранения</content>
+  <content>Catalog.Подразделения</content>
+  <content>Catalog.Сотрудники</content>
+  <content>InformationRegister.РасписаниеРаботыСтоловой</content>
+  <content>Catalog.КатегорииМеню</content>
+  <content>InformationRegister.ПоказателиРаботыСтоловой</content>
+  <parentSubsystem>Subsystem.Столовая</parentSubsystem>
+</mdclass:Subsystem>

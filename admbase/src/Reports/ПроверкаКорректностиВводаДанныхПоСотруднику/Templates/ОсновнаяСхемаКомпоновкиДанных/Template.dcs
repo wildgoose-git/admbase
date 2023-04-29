@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекстПроверки</dataPath>
+			<field>ТекстПроверки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекстРекомендации</dataPath>
+			<field>ТекстРекомендации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рекомендация</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	УчетРабочегоВремениСотрудников.Сотрудник КАК Сотрудник,
+	УчетРабочегоВремениСотрудников.Регистратор КАК Регистратор
+ПОМЕСТИТЬ УчетРабочегоВремениСотрудников
+ИЗ
+	РегистрСведений.УчетРабочегоВремениСотрудников КАК УчетРабочегоВремениСотрудников
+ГДЕ
+	УчетРабочегоВремениСотрудников.Сотрудник = &amp;Сотрудник
+	И УчетРабочегоВремениСотрудников.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Сотрудники.Ссылка КАК Сотрудник
+ПОМЕСТИТЬ СправочникСотрудники
+ИЗ
+	Справочник.Сотрудники КАК Сотрудники
+ГДЕ
+	Сотрудники.Ссылка = &amp;Сотрудник
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СводкаРабочегоВремени.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ СводкаРабочегоВремени
+ИЗ
+	РегистрСведений.СводкаРабочегоВремени КАК СводкаРабочегоВремени
+ГДЕ
+	СводкаРабочегоВремени.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И СводкаРабочегоВремени.Сотрудник = &amp;Сотрудник
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СостояниеСотрудниковСрезПоследних.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ СостояниеСотрудников
+ИЗ
+	РегистрСведений.СостояниеСотрудников.СрезПоследних(&amp;ДатаОкончания, Сотрудник В
+		(ВЫБРАТЬ
+			СводкаРабочегоВремени.Сотрудник КАК Сотрудник
+		ИЗ
+			СводкаРабочегоВремени КАК СводкаРабочегоВремени)) КАК СостояниеСотрудниковСрезПоследних
+ГДЕ
+	СостояниеСотрудниковСрезПоследних.Сотрудник = &amp;Сотрудник
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ГрафикиРаботПостоянныеСрезПоследних.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ГрафикиРаботПостоянные
+ИЗ
+	РегистрСведений.ГрафикиРаботПостоянные.СрезПоследних(&amp;ДатаОкончания, Сотрудник В
+		(ВЫБРАТЬ
+			СводкаРабочегоВремени.Сотрудник КАК Сотрудник
+		ИЗ
+			СводкаРабочегоВремени КАК СводкаРабочегоВремени)) КАК ГрафикиРаботПостоянныеСрезПоследних
+ГДЕ
+	ГрафикиРаботПостоянныеСрезПоследних.Сотрудник = &amp;Сотрудник
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УчетРабочегоВремениСотрудников.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ОтклоненияERP
+ИЗ
+	УчетРабочегоВремениСотрудников КАК УчетРабочегоВремениСотрудников
+ГДЕ
+	ТИПЗНАЧЕНИЯ(УчетРабочегоВремениСотрудников.Регистратор) = ТИП(Документ.ОтклоненияERP)
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УчетРабочегоВремениСотрудников.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ЗаявкиDMC
+ИЗ
+	УчетРабочегоВремениСотрудников КАК УчетРабочегоВремениСотрудников
+ГДЕ
+	ТИПЗНАЧЕНИЯ(УчетРабочегоВремениСотрудников.Регистратор) = ТИП(Документ.ЗаявкиDMC)
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УчетРабочегоВремениСотрудников.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ОбъяснительныеЗаписки
+ИЗ
+	УчетРабочегоВремениСотрудников КАК УчетРабочегоВремениСотрудников
+ГДЕ
+	ТИПЗНАЧЕНИЯ(УчетРабочегоВремениСотрудников.Регистратор) = ТИП(Документ.ОбъяснительнаяЗаписка)
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ГрафикиРаботИндивидуальные.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ГрафикиРаботИндивидуальные
+ИЗ
+	РегистрСведений.ГрафикиРаботИндивидуальные КАК ГрафикиРаботИндивидуальные
+ГДЕ
+	ГрафикиРаботИндивидуальные.Сотрудник = &amp;Сотрудник
+	И ГрафикиРаботИндивидуальные.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УчетРабочегоВремениСотрудников.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ПроходыПерко
+ИЗ
+	УчетРабочегоВремениСотрудников КАК УчетРабочегоВремениСотрудников
+ГДЕ
+	ТИПЗНАЧЕНИЯ(УчетРабочегоВремениСотрудников.Регистратор) = ТИП(Документ.ПроходыPerco)
+
+Индексировать по
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник КАК Сотрудник,
+	ВЫБОР
+		КОГДА ПроходыПерко.Сотрудник ЕСТЬ NULL
+			ТОГДА "1. Отсутвуют данные проходов"
+		ИНАЧЕ "1. Данные проходов - OK"
+	КОНЕЦ КАК ТекстПроверки,
+	ВЫБОР
+		КОГДА ПроходыПерко.Сотрудник ЕСТЬ NULL
+			ТОГДА "Необходимо проверить документ ""Проходы"""
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТекстРекомендации
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ПроходыПерко КАК ПроходыПерко
+		ПО СправочникСотрудники.Сотрудник = ПроходыПерко.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА СостояниеСотрудников.Сотрудник ЕСТЬ NULL
+			ТОГДА "2. Отсутвуют данные состояния сотрудников"
+		ИНАЧЕ "2. Данные состояний сотрудников - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА СостояниеСотрудников.Сотрудник ЕСТЬ NULL
+			ТОГДА "Необходимо проверить документ ""Отражение состояний сотрудников"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ СостояниеСотрудников КАК СостояниеСотрудников
+		ПО СправочникСотрудники.Сотрудник = СостояниеСотрудников.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА ГрафикиРаботПостоянные.Сотрудник ЕСТЬ NULL
+			ТОГДА "3. Отсутвуют данные графиков"
+		ИНАЧЕ "3.  Графики работ - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ГрафикиРаботПостоянные.Сотрудник ЕСТЬ NULL
+			ТОГДА "Необходимо проверить документ ""Назначение постоянных графиков"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ГрафикиРаботПостоянные КАК ГрафикиРаботПостоянные
+		ПО СправочникСотрудники.Сотрудник = ГрафикиРаботПостоянные.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА ОтклоненияERP.Сотрудник ЕСТЬ NULL
+			ТОГДА "4. Данные отклонений ERP не найдены"
+		ИНАЧЕ "4.  Данные отклонений ERP - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОтклоненияERP.Сотрудник ЕСТЬ NULL
+			ТОГДА "Можно поглядеть документ ""Отклонения ERP"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ОтклоненияERP КАК ОтклоненияERP
+		ПО СправочникСотрудники.Сотрудник = ОтклоненияERP.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА ЗаявкиDMC.Сотрудник ЕСТЬ NULL
+			ТОГДА "5. Данные заявок отсутствие не найдены"
+		ИНАЧЕ "5.  Заявки на отсутсвие - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ЗаявкиDMC.Сотрудник ЕСТЬ NULL
+			ТОГДА "Можно поглядеть документ ""Заявка на остсутсвие"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗаявкиDMC КАК ЗаявкиDMC
+		ПО СправочникСотрудники.Сотрудник = ЗаявкиDMC.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА ОбъяснительныеЗаписки.Сотрудник ЕСТЬ NULL
+			ТОГДА "6. Объяснительные записки не найдены"
+		ИНАЧЕ "6.  Объяснительные записки - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОбъяснительныеЗаписки.Сотрудник ЕСТЬ NULL
+			ТОГДА "Можно поглядеть документ ""Объяснительная записка"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ОбъяснительныеЗаписки КАК ОбъяснительныеЗаписки
+		ПО СправочникСотрудники.Сотрудник = ОбъяснительныеЗаписки.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА ГрафикиРаботИндивидуальные.Сотрудник ЕСТЬ NULL
+			ТОГДА "7. Индивидуальные графики не назначены"
+		ИНАЧЕ "7.  Индивидуальные графики - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ГрафикиРаботИндивидуальные.Сотрудник ЕСТЬ NULL
+			ТОГДА "Можно поглядеть документ ""Назначение индивидуальных графиков"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ГрафикиРаботИндивидуальные КАК ГрафикиРаботИндивидуальные
+		ПО СправочникСотрудники.Сотрудник = ГрафикиРаботИндивидуальные.Сотрудник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СправочникСотрудники.Сотрудник,
+	ВЫБОР
+		КОГДА СводкаРабочегоВремени.Сотрудник ЕСТЬ NULL
+			ТОГДА "8. Расчет учета рабочего времени не выполнене"
+		ИНАЧЕ "8.  Расчет учета рабочего времени - OK"
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА СводкаРабочегоВремени.Сотрудник ЕСТЬ NULL
+			ТОГДА "Сформировать документ ""Расчет рабочего времени"""
+		ИНАЧЕ ""
+	КОНЕЦ
+ИЗ
+	СправочникСотрудники КАК СправочникСотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ СводкаРабочегоВремени КАК СводкаРабочегоВремени
+		ПО СправочникСотрудники.Сотрудник = СводкаРабочегоВремени.Сотрудник</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Сотрудник</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сотрудник</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Сотрудники</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>СтандартныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПроверкаКорректностиВводаДанныхПоСотруднику</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проверка корректности ввода данных по сотруднику</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекстПроверки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекстРекомендации</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Сотрудник</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>4c87d40d-5352-4cec-9b9d-5095c9fc8960</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>СтандартныйПериод</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">LastMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>b2a787a0-6918-413e-831b-3f7b68781929</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ТекстПроверки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка корректности ввода данных по сотруднику</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

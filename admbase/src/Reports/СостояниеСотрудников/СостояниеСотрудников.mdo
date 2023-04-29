@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1206983-87ca-49fa-bb4c-7d7c85fab223">
+  <producedTypes>
+    <objectType typeId="7f443bc7-aca9-4f9b-b9eb-eaaefb34edef" valueTypeId="622be74a-21f5-4350-a3f8-ca46065e27f5"/>
+    <managerType typeId="fad27508-c529-4d91-83d7-6a6748b67fc9" valueTypeId="5f657476-011b-4a91-bbc1-e89804ff4b5b"/>
+  </producedTypes>
+  <name>СостояниеСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние сотрудников</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.СостояниеСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="78e4be5d-c9de-4a79-89f1-7e33b531cd17">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="89b980b3-7359-4b9d-9ef5-e43d1f62d073">
+    <name>СостояниеСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние сотрудников</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

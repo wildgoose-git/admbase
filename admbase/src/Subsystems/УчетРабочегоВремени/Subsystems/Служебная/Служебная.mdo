@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="466785f8-bf28-4cb0-926e-5df17255fbf5">
+  <name>Служебная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Служебная</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Enum.Территории</content>
+  <content>Enum.ТипыПодключения</content>
+  <content>InformationRegister.ГрафикиРаботПостоянные</content>
+  <content>InformationRegister.СостояниеСотрудников</content>
+  <content>Catalog.ТипыДокументов</content>
+  <content>InformationRegister.УчетРабочегоВремениСотрудников</content>
+  <content>Enum.БазыИсточники</content>
+  <content>Enum.ЗаданияРасчета</content>
+  <content>InformationRegister.ЗаданияНаРасчетРабочегоВремени</content>
+  <content>InformationRegister.СводкаРабочегоВремени</content>
+  <parentSubsystem>Subsystem.УчетРабочегоВремени</parentSubsystem>
+</mdclass:Subsystem>

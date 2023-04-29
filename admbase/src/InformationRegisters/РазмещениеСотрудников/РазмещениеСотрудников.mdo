@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65706f39-9ff3-4fdf-b9a9-ab14ef0cac84">
+  <producedTypes>
+    <selectionType typeId="41ea63aa-bfb4-49cb-b7e1-a44846035c66" valueTypeId="aa4cb891-4945-4eb2-aa46-be7bd9df9963"/>
+    <listType typeId="e801935d-7390-42d9-901f-859c17eec489" valueTypeId="ba8f435e-6e42-4067-84e8-7b93b87f9b65"/>
+    <managerType typeId="fc2e71ae-7e0a-4dc6-8e50-91f17cbf1e4c" valueTypeId="b4ae0bdf-3c7d-43ce-9a7a-dde08d39ecf6"/>
+    <recordSetType typeId="75cd69f6-67ed-4183-bce3-da05e3a3b8f6" valueTypeId="0c0e2826-fbd9-4358-b66f-493c8b52f952"/>
+    <recordKeyType typeId="4903c4f9-8e5e-4437-9d20-1fe4c33e1888" valueTypeId="98c7c0f0-e364-4111-b521-2f7f182187e1"/>
+    <recordType typeId="d47d8a40-807c-404d-87c7-7db92641ca26" valueTypeId="d8632cb5-68c2-43f1-bd94-5173d8c0d0a1"/>
+    <recordManagerType typeId="ac3d62db-6fab-4bc4-bd71-6898d232a141" valueTypeId="f2834365-29c8-4b6b-93fb-b555ea3322ff"/>
+  </producedTypes>
+  <name>РазмещениеСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размещение сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2a5becac-3b40-4c90-97ea-eeca291dda53">
+    <name>АдресРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес регистрации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АдресаРегистрации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="aa750f1d-7e79-4b9f-9b11-f5f7a49f0f9f">
+    <name>Комната</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комната</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КомнатыВагоны</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.РазмещениеСотрудников.Resource.АдресРегистрации</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a36035fc-9455-4791-8db0-41729ac8bd26">
+    <name>Место</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6a366fab-c6da-4eb8-a15a-9de974e99409">
+    <name>СтоимостьПроживания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость проживания</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f127c348-eaba-4abe-8d8d-d17275b6be53">
+    <name>ДатаЗаселения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заселения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3add4a6a-acf1-4769-a5c8-bea19ff66580">
+    <name>ДатаВыселения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выселения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="ec4418d0-3b59-4a19-b392-ed54cc7859c1">
+    <name>ДокументВыселения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ выселения</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПеремещениеСотрудников</types>
+      <types>DocumentRef.ВыселениеСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="07922216-c1ce-49e0-a1ec-67687867bfab">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d15e4d50-568b-4f4c-a08e-fef7a90f216e">
+  <producedTypes>
+    <refType typeId="09ebcf8c-d04e-4c9a-842c-f45695e1dde2" valueTypeId="10fb2d10-b1a0-4704-826b-7f3380680c25"/>
+    <listType typeId="7893f30b-edcc-4c96-b74e-cc62e3f1df80" valueTypeId="b942e3b4-3e77-4ea4-9cff-0463421e3b81"/>
+    <managerType typeId="10c98293-07ad-4a83-83ff-5a6ef134613c" valueTypeId="99cf482e-5f35-4ed6-bde6-99914f431fc6"/>
+  </producedTypes>
+  <name>Территории</name>
+  <synonym>
+    <key>ru</key>
+    <value>Территории</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a4327d26-26fd-4d2a-97e2-81a000da8d81">
+    <name>Рогачево</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рогачево</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ef6144d1-0b72-4fa4-a91a-3449354aeb07">
+    <name>Москва</name>
+    <synonym>
+      <key>ru</key>
+      <value>Москва</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

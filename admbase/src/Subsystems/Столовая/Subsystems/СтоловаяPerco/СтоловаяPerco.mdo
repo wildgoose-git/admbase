@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9174acd5-3ed7-4e65-addb-591660a832a8">
+  <name>СтоловаяPerco</name>
+  <synonym>
+    <key>ru</key>
+    <value>Perco</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.СтоловаяPerco</content>
+  <parentSubsystem>Subsystem.Столовая</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0bc2d0e-6fdf-48d2-b1fd-15fa3fa7d96c">
+  <name>ПересчетыПродуктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пересчеты продуктов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ИнвентаризацияТоваров</content>
+  <content>Document.ОприходованиеТоваров</content>
+  <content>Document.СписаниеТоваров</content>
+  <parentSubsystem>Subsystem.Столовая</parentSubsystem>
+</mdclass:Subsystem>

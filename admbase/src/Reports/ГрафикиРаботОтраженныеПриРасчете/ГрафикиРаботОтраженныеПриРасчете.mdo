@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fdecd1b-1e7f-4586-b397-f48675c5fb63">
+  <producedTypes>
+    <objectType typeId="c7e0a4c7-af9f-4111-af3d-4b920e5de577" valueTypeId="80c690aa-d4d5-47c4-9f7b-faf6b6ae1cde"/>
+    <managerType typeId="3a9d14ee-81a3-452f-8c59-b47534620c8c" valueTypeId="876fcdee-88e3-4371-aa69-3ea86b554758"/>
+  </producedTypes>
+  <name>ГрафикиРаботОтраженныеПриРасчете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работ отраженные при расчете</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ГрафикиРаботОтраженныеПриРасчете.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="8a0d9a5b-e6c6-40c1-a4c3-6a4408dbc8df">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="1fe28e1c-0ee1-4d7f-9c1f-ef646fac95fa">
+    <name>ГрафикиРаботОтраженныеПриРасчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Графики работ отраженные при расчете</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

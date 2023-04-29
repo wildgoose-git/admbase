@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноРабочееВремяЧислом</dataPath>
+			<field>ОтработаноРабочееВремяЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееВремяЗаТерриториейЧислом</dataPath>
+			<field>РабочееВремяЗаТерриториейЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноСверхРабочееВремяЧислом</dataPath>
+			<field>ОтработаноСверхРабочееВремяЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаЧислом</dataPath>
+			<field>НормаЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВходЧислом</dataPath>
+			<field>ВходЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходЧислом</dataPath>
+			<field>ВыходЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрисутствиеЧислом</dataPath>
+			<field>ПрисутствиеЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяОкончанияЧислом</dataPath>
+			<field>ВремяОкончанияЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтсутствиеЧислом</dataPath>
+			<field>ОтсутствиеЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтпускБольничныйУвольнениеЧислом</dataPath>
+			<field>ОтпускБольничныйУвольнениеЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяНачалаЧислом</dataPath>
+			<field>ВремяНачалаЧислом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаСУчетомПричиныЧислом</dataPath>
+			<field>НормаСУчетомПричиныЧислом</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма с учетом причины числом</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БалансЧислом</dataPath>
+			<field>БалансЧислом</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Баланс числом</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГрафикРаботы</dataPath>
+			<field>ГрафикРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СхемаРаботы</dataPath>
+			<field>СхемаРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СотрудникНаименование</dataPath>
+			<field>СотрудникНаименование</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СводкаРабочегоВремени.Сотрудник КАК Сотрудник,
+	СводкаРабочегоВремени.НормаЧислом КАК НормаЧислом,
+	СводкаРабочегоВремени.ВходЧислом КАК ВходЧислом,
+	СводкаРабочегоВремени.ВыходЧислом КАК ВыходЧислом,
+	СводкаРабочегоВремени.ПрисутствиеЧислом КАК ПрисутствиеЧислом,
+	СводкаРабочегоВремени.ОтработаноРабочееВремяЧислом КАК ОтработаноРабочееВремяЧислом,
+	СводкаРабочегоВремени.ОтработаноСверхРабочееВремяЧислом КАК ОтработаноСверхРабочееВремяЧислом,
+	СводкаРабочегоВремени.РабочееВремяЗаТерриториейЧислом КАК РабочееВремяЗаТерриториейЧислом,
+	СводкаРабочегоВремени.ОтсутствиеЧислом КАК ОтсутствиеЧислом,
+	СводкаРабочегоВремени.ОтпускБольничныйУвольнениеЧислом КАК ОтпускБольничныйУвольнениеЧислом,
+	СводкаРабочегоВремени.ВремяНачалаЧислом КАК ВремяНачалаЧислом,
+	СводкаРабочегоВремени.ВремяОкончанияЧислом КАК ВремяОкончанияЧислом,
+	ВЫБОР
+		КОГДА СводкаРабочегоВремени.ОтпускБольничныйУвольнениеЧислом = 0
+			ТОГДА СводкаРабочегоВремени.НормаЧислом
+		ИНАЧЕ 0
+	КОНЕЦ КАК НормаСУчетомПричиныЧислом,
+	СводкаРабочегоВремени.ОтработаноРабочееВремяЧислом + СводкаРабочегоВремени.ОтработаноСверхРабочееВремяЧислом + СводкаРабочегоВремени.РабочееВремяЗаТерриториейЧислом - ВЫБОР
+		КОГДА СводкаРабочегоВремени.ОтпускБольничныйУвольнениеЧислом = 0
+			ТОГДА СводкаРабочегоВремени.НормаЧислом
+		ИНАЧЕ 0
+	КОНЕЦ КАК БалансЧислом,
+	СводкаРабочегоВремени.Подразделение КАК Подразделение,
+	СводкаРабочегоВремени.Должность КАК Должность,
+	СводкаРабочегоВремени.ГрафикРаботы КАК ГрафикРаботы,
+	СводкаРабочегоВремени.СхемаРаботы КАК СхемаРаботы,
+	ЕСТЬNULL(СводкаРабочегоВремени.Сотрудник.Наименование, "") КАК СотрудникНаименование
+ИЗ
+	РегистрСведений.СводкаРабочегоВремени КАК СводкаРабочегоВремени
+ГДЕ
+	СводкаРабочегоВремени.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания</query>
+	</dataSet>
+	<totalField>
+		<dataPath>НормаСУчетомПричиныЧислом</dataPath>
+		<expression>Сумма(НормаСУчетомПричиныЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НормаЧислом</dataPath>
+		<expression>Сумма(НормаЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтпускБольничныйУвольнениеЧислом</dataPath>
+		<expression>Сумма(ОтпускБольничныйУвольнениеЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтработаноРабочееВремяЧислом</dataPath>
+		<expression>Сумма(ОтработаноРабочееВремяЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтработаноСверхРабочееВремяЧислом</dataPath>
+		<expression>Сумма(ОтработаноСверхРабочееВремяЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтсутствиеЧислом</dataPath>
+		<expression>Сумма(ОтсутствиеЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрисутствиеЧислом</dataPath>
+		<expression>Сумма(ПрисутствиеЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РабочееВремяЗаТерриториейЧислом</dataPath>
+		<expression>Сумма(РабочееВремяЗаТерриториейЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>БалансЧислом</dataPath>
+		<expression>Сумма(БалансЧислом)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НормаСУчетомПричиныЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НормаЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтпускБольничныйУвольнениеЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноРабочееВремяЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноСверхРабочееВремяЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтсутствиеЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПрисутствиеЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РабочееВремяЗаТерриториейЧислом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БалансЧислом</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СотрудникНаименование</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="005222fa-4c06-4097-945b-5482e1a9d0d0">
+  <producedTypes>
+    <selectionType typeId="d480854b-7db8-4f6d-be19-876d5b93feb2" valueTypeId="d7e3f90b-645f-4ee1-bdfb-fd5f9946cea1"/>
+    <listType typeId="34c18ec2-ed7a-40be-97b7-1381e76ea01c" valueTypeId="d9387cfb-149f-44a2-8b32-fb4c0e099529"/>
+    <managerType typeId="ef0dfd09-fb49-43a4-b213-7bb34a130fda" valueTypeId="7ea6bd14-53e6-49e7-98bc-cf1a74316dc0"/>
+    <recordSetType typeId="66e5e92f-0b23-4bde-8073-06aca52c2e0e" valueTypeId="c8f1eb04-9344-4a62-9c7d-f46c81f650c4"/>
+    <recordKeyType typeId="4dd6aaee-afd4-49a0-8475-e023ab2ad15b" valueTypeId="48133e2d-3e21-4361-89b6-c0e2aa110864"/>
+    <recordType typeId="4533fa39-4c3f-44c6-b805-46ba958653ba" valueTypeId="7a1b683f-f41d-43aa-9d82-fea20d42dac9"/>
+    <recordManagerType typeId="a2893fc5-5a5d-4d4c-b7e9-6c9dff942f4c" valueTypeId="eefd2aff-b08a-4715-aef2-63978e623987"/>
+  </producedTypes>
+  <name>КалендарьМеню</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь меню</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КалендарьМеню.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КалендарьМеню.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Календарь меню</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Календарь меню</value>
+  </listPresentation>
+  <resources uuid="f22c4c30-a79e-41d1-a0d9-e16fe9165453">
+    <name>Меню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Меню</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>ВидНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.ВидыНоменклатуры.Меню</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f2ea495b-fe5b-47d7-b5a2-abdeb67dab1d">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7d5595b9-1c88-43cc-818a-c5a89d91b394">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d303a2d3-e1e8-413e-b8f7-dfc2dd93849f">
+    <name>ВидСтола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид стола</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтолов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="db9bf585-d108-49d4-9494-1858bfd572dd">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1e93b53a-5f01-47a0-a1a9-af7ac1a21968">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

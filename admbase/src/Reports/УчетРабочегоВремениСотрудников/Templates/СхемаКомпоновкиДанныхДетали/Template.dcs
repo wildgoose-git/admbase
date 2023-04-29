@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноРабочееВремяДатой</dataPath>
+			<field>ОтработаноРабочееВремяДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееВремяЗаТерриториейДатой</dataPath>
+			<field>РабочееВремяЗаТерриториейДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтпускБольничныйУвольнениеДатой</dataPath>
+			<field>ОтпускБольничныйУвольнениеДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееВремяОкончание</dataPath>
+			<field>РабочееВремяОкончание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее время окончание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноСверхРабочееВремяДатой</dataPath>
+			<field>ОтработаноСверхРабочееВремяДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаДатой</dataPath>
+			<field>НормаДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВходДатой</dataPath>
+			<field>ВходДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГрафикРаботы</dataPath>
+			<field>ГрафикРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходДатой</dataPath>
+			<field>ВыходДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрисутствиеДатой</dataPath>
+			<field>ПрисутствиеДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяОкончанияДатой</dataPath>
+			<field>ВремяОкончанияДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтсутствиеДатой</dataPath>
+			<field>ОтсутствиеДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяНачалаДатой</dataPath>
+			<field>ВремяНачалаДатой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СхемаРаботы</dataPath>
+			<field>СхемаРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СодержаниеЗаявкиНомерСтроки</dataPath>
+			<field>СодержаниеЗаявкиНомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаОтсутствия</dataPath>
+			<field>ПричинаОтсутствия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причина отсутствия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъяснительнаяЗаписка</dataPath>
+			<field>ОбъяснительнаяЗаписка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерДокументаDMC</dataPath>
+			<field>НомерДокументаDMC</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерДокументаERP</dataPath>
+			<field>НомерДокументаERP</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДокументаERP</dataPath>
+			<field>ДатаДокументаERP</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДокументаDMC</dataPath>
+			<field>ДатаДокументаDMC</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СотрудникНаименование</dataPath>
+			<field>СотрудникНаименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолжностьНаименование</dataPath>
+			<field>ДолжностьНаименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГрафикНаименование</dataPath>
+			<field>ГрафикНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>График наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипДокумента</dataPath>
+			<field>ТипДокумента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерОбъяснения</dataPath>
+			<field>НомерОбъяснения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер объяснения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерДокумента</dataPath>
+			<field>НомерДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер документа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СодержаниеОбъяснения</dataPath>
+			<field>СодержаниеОбъяснения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Содержание объяснения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееВремяНачало</dataPath>
+			<field>РабочееВремяНачало</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее время начало</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеНаименование</dataPath>
+			<field>ПодразделениеНаименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаСУчетомПричиныДатой</dataPath>
+			<field>НормаСУчетомПричиныДатой</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма с учетом причины датой</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СодержаниеЗаявки</dataPath>
+			<field>СодержаниеЗаявки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Содержание заявки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ) КАК Дата
+ПОМЕСТИТЬ ТаблицаДаты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 1)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 2)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 3)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 4)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 5)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 6)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 7)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 8)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 9)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 10)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 11)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 12)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 13)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 14)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 15)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 16)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 17)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 18)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 19)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 20)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 21)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 22)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 23)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 24)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 25)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 26)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 27)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 28) &lt; НАЧАЛОПЕРИОДА(КОНЕЦПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ),
+			ДЕНЬ)
+			ТОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 28)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(КОНЕЦПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ)
+	КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 29) &lt; НАЧАЛОПЕРИОДА(КОНЕЦПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ),
+			ДЕНЬ)
+			ТОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 29)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(КОНЕЦПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ)
+	КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 30) &lt; НАЧАЛОПЕРИОДА(КОНЕЦПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ),
+			ДЕНЬ)
+			ТОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ, 30)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(КОНЕЦПЕРИОДА(&amp;ДатаНачала, МЕСЯЦ), ДЕНЬ)
+	КОНЕЦ
+
+ИНДЕКСИРОВАТЬ ПО
+	Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	РазличныеДаты.Дата КАК Дата
+ПОМЕСТИТЬ РазличныеДаты
+ИЗ
+	ТаблицаДаты КАК РазличныеДаты
+
+индексировать по
+	Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СводкаРабочегоВремени.Сотрудник КАК Сотрудник,
+	СводкаРабочегоВремени.Дата КАК Дата,
+	СводкаРабочегоВремени.НормаДатой КАК НормаДатой,
+	СводкаРабочегоВремени.ВходДатой КАК ВходДатой,
+	СводкаРабочегоВремени.ВыходДатой КАК ВыходДатой,
+	СводкаРабочегоВремени.ПрисутствиеДатой КАК ПрисутствиеДатой,
+	СводкаРабочегоВремени.ОтработаноРабочееВремяДатой КАК ОтработаноРабочееВремяДатой,
+	СводкаРабочегоВремени.ОтработаноСверхРабочееВремяДатой КАК ОтработаноСверхРабочееВремяДатой,
+	СводкаРабочегоВремени.РабочееВремяЗаТерриториейДатой КАК РабочееВремяЗаТерриториейДатой,
+	СводкаРабочегоВремени.ОтсутствиеДатой КАК ОтсутствиеДатой,
+	СводкаРабочегоВремени.ОтпускБольничныйУвольнениеДатой КАК ОтпускБольничныйУвольнениеДатой,
+	ВЫБОР
+		КОГДА СводкаРабочегоВремени.ОтпускБольничныйУвольнениеДатой = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА СводкаРабочегоВремени.НормаДатой
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ КАК НормаСУчетомПричиныДатой,
+	СводкаРабочегоВремени.ВремяНачалаДатой КАК ВремяНачалаДатой,
+	СводкаРабочегоВремени.ВремяОкончанияДатой КАК ВремяОкончанияДатой,
+	СводкаРабочегоВремени.ГрафикРаботы КАК ГрафикРаботы,
+	СводкаРабочегоВремени.СхемаРаботы КАК СхемаРаботы,
+	СводкаРабочегоВремени.СодержаниеЗаявкиНомерСтроки КАК СодержаниеЗаявкиНомерСтроки,
+	ВЫБОР
+		КОГДА СводкаРабочегоВремени.ТипДокумента = ЗНАЧЕНИЕ(Справочник.ТипыДокументов.ПустаяСсылка)
+			ТОГДА ЕСТЬNULL(СводкаРабочегоВремени.ПричинаОтсутствия.Наименование, "")
+		ИНАЧЕ ЕСТЬNULL(СводкаРабочегоВремени.ТипДокумента.Наименование, "")
+	КОНЕЦ КАК ПричинаОтсутствия,
+	СводкаРабочегоВремени.Подразделение КАК Подразделение,
+	СводкаРабочегоВремени.ОбъяснительнаяЗаписка КАК ОбъяснительнаяЗаписка,
+	СводкаРабочегоВремени.НомерДокументаDMC КАК НомерДокументаDMC,
+	СводкаРабочегоВремени.НомерДокументаERP КАК НомерДокументаERP,
+	СводкаРабочегоВремени.ДатаДокументаERP КАК ДатаДокументаERP,
+	СводкаРабочегоВремени.ДатаДокументаDMC КАК ДатаДокументаDMC,
+	СводкаРабочегоВремени.Сотрудник.Наименование КАК СотрудникНаименование,
+	СводкаРабочегоВремени.Должность.Наименование КАК ДолжностьНаименование,
+	СводкаРабочегоВремени.ГрафикРаботы.Наименование КАК ГрафикНаименование,
+	СводкаРабочегоВремени.ТипДокумента КАК ТипДокумента,
+	ВЫБОР
+		КОГДА СводкаРабочегоВремени.НомерДокументаERP = ""
+			ТОГДА СводкаРабочегоВремени.НомерДокументаDMC
+		ИНАЧЕ СводкаРабочегоВремени.НомерДокументаERP
+	КОНЕЦ КАК НомерДокумента,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОбъяснительнаяЗаписка.Номер, "") КАК НомерОбъяснения,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОбъяснительнаяЗаписка.Содержание, "") КАК СодержаниеОбъяснения,
+	СводкаРабочегоВремени.СхемаРаботы.РабочееВремяНачало КАК РабочееВремяНачало,
+	СводкаРабочегоВремени.СхемаРаботы.РабочееВремяОкончание КАК РабочееВремяОкончание,
+	СводкаРабочегоВремени.Должность КАК Должность,
+	СводкаРабочегоВремени.Подразделение.Наименование КАК ПодразделениеНаименование,
+	ЗаявкиDMCИсходныеДанные.Содержание КАК СодержаниеЗаявки
+ПОМЕСТИТЬ СводкаРабочегоВремени
+ИЗ
+	РегистрСведений.СводкаРабочегоВремени КАК СводкаРабочегоВремени
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаявкиDMC.ИсходныеДанные КАК ЗаявкиDMCИсходныеДанные
+		ПО СводкаРабочегоВремени.ЗаявкаDMC = ЗаявкиDMCИсходныеДанные.Ссылка
+		И СводкаРабочегоВремени.СодержаниеЗаявкиНомерСтроки = ЗаявкиDMCИсходныеДанные.НомерСтроки
+ГДЕ
+	СводкаРабочегоВремени.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+
+ИНДЕКСИРОВАТЬ ПО
+	Сотрудник,
+	Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СостояниеСотрудниковСрезПоследних.Сотрудник КАК Сотрудник,
+	СостояниеСотрудниковСрезПоследних.Сотрудник.Наименование КАК СотрудникНаименование,
+	СостояниеСотрудниковСрезПоследних.Подразделение КАК Подразделение,
+	СостояниеСотрудниковСрезПоследних.Должность КАК Должность
+ПОМЕСТИТЬ СостояниеСотрудников
+ИЗ
+	РегистрСведений.СостояниеСотрудников.СрезПоследних(&amp;ДатаОкончания, Сотрудник В
+		(ВЫБРАТЬ
+			СводкаРабочегоВремени.Сотрудник КАК Сотрудник
+		ИЗ
+			СводкаРабочегоВремени КАК СводкаРабочегоВремени)) КАК СостояниеСотрудниковСрезПоследних
+
+ИНДЕКСИРОВАТЬ ПО
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ГрафикиРаботПостоянныеСрезПоследних.Сотрудник КАК Сотрудник,
+	ГрафикиРаботПостоянныеСрезПоследних.СхемаРабочегоВремени КАК СхемаРабочегоВремени,
+	ГрафикиРаботПостоянныеСрезПоследних.Календарь КАК Календарь
+ПОМЕСТИТЬ ГрафикиРаботПостоянные
+ИЗ
+	РегистрСведений.ГрафикиРаботПостоянные.СрезПоследних(&amp;ДатаОкончания, Сотрудник В
+		(ВЫБРАТЬ
+			СводкаРабочегоВремени.Сотрудник КАК Сотрудник
+		ИЗ
+			СводкаРабочегоВремени КАК СводкаРабочегоВремени)) КАК ГрафикиРаботПостоянныеСрезПоследних
+
+ИНДЕКСИРОВАТЬ ПО
+	Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ
+	СостояниеСотрудников.Сотрудник КАК Сотрудник,
+	СостояниеСотрудников.СотрудникНаименование КАК СотрудникНаименование,
+	СостояниеСотрудников.Подразделение КАК Подразделение,
+	СостояниеСотрудников.Должность КАК Должность,
+	NULL КАК СхемаРабочегоВремени,
+	NULL КАК Календарь
+ПОМЕСТИТЬ ТаблицаОбъединение
+ИЗ
+	СостояниеСотрудников КАК СостояниеСотрудников
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ГрафикиРаботПостоянные.Сотрудник,
+	ГрафикиРаботПостоянные.Сотрудник.Наименование,
+	NULL,
+	NULL,
+	ГрафикиРаботПостоянные.СхемаРабочегоВремени,
+	ГрафикиРаботПостоянные.Календарь
+ИЗ
+	ГрафикиРаботПостоянные КАК ГрафикиРаботПостоянные
+
+индексировать по
+	сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ
+	ТаблицаОбъединение.Сотрудник КАК Сотрудник,
+	ТаблицаОбъединение.СотрудникНаименование КАК СотрудникНаименование,
+	МАКСИМУМ(ТаблицаОбъединение.Подразделение) КАК Подразделение,
+	МАКСИМУМ(ТаблицаОбъединение.Должность) КАК Должность,
+	МАКСИМУМ(ТаблицаОбъединение.СхемаРабочегоВремени) КАК СхемаРабочегоВремени,
+	МАКСИМУМ(ТаблицаОбъединение.Календарь) КАК Календарь
+ПОМЕСТИТЬ Группировка
+ИЗ
+	ТаблицаОбъединение КАК ТаблицаОбъединение
+СГРУППИРОВАТЬ ПО
+	ТаблицаОбъединение.Сотрудник,
+	ТаблицаОбъединение.СотрудникНаименование
+
+индексировать по
+	сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ
+	РазличныеДаты.Дата КАК Дата,
+	Группировка.Сотрудник КАК Сотрудник,
+	Группировка.СотрудникНаименование КАК СотрудникНаименование,
+	Группировка.Подразделение КАК Подразделение,
+	Группировка.Должность КАК Должность,
+	Группировка.СхемаРабочегоВремени КАК СхемаРабочегоВремени,
+	Группировка.Календарь КАК Календарь
+ПОМЕСТИТЬ ВсегоСотрудникиСДатами
+ИЗ
+	РазличныеДаты КАК РазличныеДаты
+		ПОЛНОЕ СОЕДИНЕНИЕ Группировка КАК Группировка
+		ПО (ИСТИНА)
+
+ИНДЕКСИРОВАТЬ ПО
+	Сотрудник,
+	Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ
+	ВсегоСотрудникиСДатами.Дата КАК Дата,
+	ВсегоСотрудникиСДатами.Сотрудник КАК Сотрудник,
+	ВсегоСотрудникиСДатами.СотрудникНаименование КАК СотрудникНаименование,
+	ЕСТЬNULL(СводкаРабочегоВремени.НормаДатой, &amp;ПустаяДата) КАК НормаДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ВходДатой, &amp;ПустаяДата) КАК ВходДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ВыходДатой, &amp;ПустаяДата) КАК ВыходДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ПрисутствиеДатой, &amp;ПустаяДата) КАК ПрисутствиеДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОтработаноРабочееВремяДатой, &amp;ПустаяДата) КАК ОтработаноРабочееВремяДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОтработаноСверхРабочееВремяДатой, &amp;ПустаяДата) КАК ОтработаноСверхРабочееВремяДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.РабочееВремяЗаТерриториейДатой, &amp;ПустаяДата) КАК РабочееВремяЗаТерриториейДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОтсутствиеДатой, &amp;ПустаяДата) КАК ОтсутствиеДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОтпускБольничныйУвольнениеДатой, &amp;ПустаяДата) КАК ОтпускБольничныйУвольнениеДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.НормаСУчетомПричиныДатой, &amp;ПустаяДата) КАК НормаСУчетомПричиныДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ВремяНачалаДатой, &amp;ПустаяДата) КАК ВремяНачалаДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ВремяОкончанияДатой, &amp;ПустаяДата) КАК ВремяОкончанияДатой,
+	ЕСТЬNULL(СводкаРабочегоВремени.ГрафикРаботы, ВсегоСотрудникиСДатами.Календарь) КАК ГрафикРаботы,
+	ЕСТЬNULL(СводкаРабочегоВремени.СхемаРаботы, ВсегоСотрудникиСДатами.СхемаРабочегоВремени) КАК СхемаРаботы,
+	ЕСТЬNULL(СводкаРабочегоВремени.СодержаниеЗаявкиНомерСтроки, 0) КАК СодержаниеЗаявкиНомерСтроки,
+	ЕСТЬNULL(СводкаРабочегоВремени.ПричинаОтсутствия, "") КАК ПричинаОтсутствия,
+	ЕСТЬNULL(СводкаРабочегоВремени.Подразделение, ВсегоСотрудникиСДатами.Подразделение) КАК Подразделение,
+	ЕСТЬNULL(СводкаРабочегоВремени.ОбъяснительнаяЗаписка, ЗНАЧЕНИЕ(Документ.ОбъяснительнаяЗаписка.ПустаяСсылка)) КАК
+		ОбъяснительнаяЗаписка,
+	ЕСТЬNULL(СводкаРабочегоВремени.НомерДокументаDMC, "") КАК НомерДокументаDMC,
+	ЕСТЬNULL(СводкаРабочегоВремени.НомерДокументаERP, "") КАК НомерДокументаERP,
+	ЕСТЬNULL(СводкаРабочегоВремени.ДатаДокументаERP, "") КАК ДатаДокументаERP,
+	ЕСТЬNULL(СводкаРабочегоВремени.ДатаДокументаDMC, &amp;ПустаяДата) КАК ДатаДокументаDMC,
+	ЕСТЬNULL(СводкаРабочегоВремени.ДолжностьНаименование, ВсегоСотрудникиСДатами.Должность.Наименование) КАК
+		ДолжностьНаименование,
+	ЕСТЬNULL(СводкаРабочегоВремени.ГрафикНаименование, "") КАК ГрафикНаименование,
+	ЕСТЬNULL(СводкаРабочегоВремени.ТипДокумента, ЗНАЧЕНИЕ(Справочник.ТипыДокументов.Пустаяссылка)) КАК ТипДокумента,
+	ЕСТЬNULL(СводкаРабочегоВремени.НомерДокумента, "") КАК НомерДокумента,
+	ЕСТЬNULL(СводкаРабочегоВремени.НомерОбъяснения, "") КАК НомерОбъяснения,
+	ЕСТЬNULL(СводкаРабочегоВремени.СодержаниеОбъяснения, "") КАК СодержаниеОбъяснения,
+	ЕСТЬNULL(СводкаРабочегоВремени.РабочееВремяНачало, &amp;ПустаяДата) КАК РабочееВремяНачало,
+	ЕСТЬNULL(СводкаРабочегоВремени.РабочееВремяОкончание, &amp;ПустаяДата) КАК РабочееВремяОкончание,
+	ЕСТЬNULL(СводкаРабочегоВремени.Должность, ВсегоСотрудникиСДатами.Должность) КАК Должность,
+	ЕСТЬNULL(СводкаРабочегоВремени.ПодразделениеНаименование, ВсегоСотрудникиСДатами.Подразделение.Наименование) КАК
+		ПодразделениеНаименование,
+	ЕСТЬNULL(СводкаРабочегоВремени.СодержаниеЗаявки, "") КАК СодержаниеЗаявки
+ИЗ
+	ВсегоСотрудникиСДатами КАК ВсегоСотрудникиСДатами
+		ЛЕВОЕ СОЕДИНЕНИЕ СводкаРабочегоВремени КАК СводкаРабочегоВремени
+		ПО ВсегоСотрудникиСДатами.Сотрудник = СводкаРабочегоВремени.Сотрудник
+		И ВсегоСотрудникиСДатами.Дата = СводкаРабочегоВремени.Дата
+
+УПОРЯДОЧИТЬ ПО
+	СотрудникНаименование,
+	Дата</query>
+	</dataSet>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПустаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пустая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>СотрудникДетальныеЗаписи</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сотрудник детальные записи</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВходДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВыходДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаДокументаERP</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаДокументаDMC</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерДокументаERP</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерДокументаDMC</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НормаДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НормаСУчетомПричиныДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъяснительнаяЗаписка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтпускБольничныйУвольнениеДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноРабочееВремяДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноСверхРабочееВремяДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтсутствиеДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПрисутствиеДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПричинаОтсутствия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РабочееВремяЗаТерриториейДатой</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СодержаниеЗаявки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СхемаРаботы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерОбъяснения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СодержаниеОбъяснения</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>СотрудникНаименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Дата</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

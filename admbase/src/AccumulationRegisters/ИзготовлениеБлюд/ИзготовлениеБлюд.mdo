@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5960ae1b-6c73-4150-959e-c7689d2b9ea3">
+  <producedTypes>
+    <selectionType typeId="a57d8077-bc68-481e-b1ec-cdd2c0977628" valueTypeId="9add5d73-aa3e-40ea-8378-c45bd6215069"/>
+    <listType typeId="d0e8e58d-66b7-4f26-9cd0-cea0994fe964" valueTypeId="b004264f-6cc3-4cc6-bb4b-a7410458298d"/>
+    <managerType typeId="c5c2d798-87de-4a3a-863c-f4166a601904" valueTypeId="e1bc6c78-7af8-4dab-a09c-5e4eadf5c357"/>
+    <recordSetType typeId="33ca3d16-3af5-4f91-a930-711bdb3b35e7" valueTypeId="1e4c9fea-488a-4179-9f5b-d65408ff2fa0"/>
+    <recordKeyType typeId="98d3f2d2-c15d-445f-9fbe-a09bcc56e685" valueTypeId="c326de8f-0f63-404a-a2e8-5a61c2a95861"/>
+    <recordType typeId="25f52635-02fd-4465-951e-1229d0a0a66a" valueTypeId="e7b20ec6-ae22-49e0-8242-763066f1258c"/>
+  </producedTypes>
+  <name>ИзготовлениеБлюд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изготовление блюд</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="4aad6f5c-02cb-4b6b-ab87-d5af8e06d290">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="13aa5689-f5dd-4026-bcf8-6391c81ffdfc">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f3effc79-faa0-4a5a-9d28-ad4f64df622d">
+    <name>ВидСтола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид стола</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтолов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="014dc1f8-c664-4452-820a-e7e731fcd56c">
+    <name>КатегорияМеню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория меню</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииМеню</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

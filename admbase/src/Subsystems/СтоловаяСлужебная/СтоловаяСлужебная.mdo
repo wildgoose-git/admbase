@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="192d7301-cb24-44a9-aafc-9dd9e983d869">
+  <name>СтоловаяСлужебная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Столовая служебная</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Включены все объекты по столовой</value>
+  </explanation>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.ВидыНоменклатуры</content>
+  <content>Catalog.ЕдиницыИзмерения</content>
+  <content>Catalog.МестаХранения</content>
+  <content>Catalog.Подразделения</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Document.ПоступлениеТоваров</content>
+  <content>Document.ПеремещениеТоваров</content>
+  <content>Document.СписаниеТоваров</content>
+  <content>Document.ИнвентаризацияТоваров</content>
+  <content>Document.ОприходованиеТоваров</content>
+  <content>Document.РасходПродуктов</content>
+  <content>Enum.ВидыСтолов</content>
+  <content>AccumulationRegister.ЗакупкиУПоставщиков</content>
+  <content>AccumulationRegister.ОстаткиПродуктовНаСкладах</content>
+  <content>AccumulationRegister.ИзготовлениеБлюд</content>
+  <content>Catalog.ПричиныСписания</content>
+  <content>CommonPicture.Столовая</content>
+  <content>InformationRegister.КалендарьМеню</content>
+  <content>DataProcessor.РабочееМестоСтоловая</content>
+  <content>Catalog.ПроизводственныеКалендари</content>
+  <content>Catalog.КатегорииМеню</content>
+  <content>Report.ОстаткиПродуктов</content>
+  <content>InformationRegister.ПлановыйПотребленияПродуктов</content>
+  <content>CommonModule.СтоловаяФункцииПроцедуры</content>
+  <content>Report.ИзготовленныеБлюда</content>
+  <content>Report.ЗакупкиПродуктов</content>
+  <content>CommonModule.СправочникиЗагрузкаИзВнешнихИсточниковПолныеПрава</content>
+  <content>Catalog.Сотрудники</content>
+  <content>InformationRegister.РасписаниеРаботыСтоловой</content>
+  <content>AccumulationRegister.ПосещенияСтоловойPerco</content>
+  <content>Report.СоставМеню</content>
+  <content>CommonCommand.ПанельОтчетовСтоловая</content>
+  <content>InformationRegister.ЦеныПоставщиков</content>
+  <content>Document.УстановкаРасчетЦенНоменклатуры</content>
+  <content>InformationRegister.ЦеныНоменклатуры</content>
+  <content>InformationRegister.ПоказателиРаботыСтоловой</content>
+  <content>Report.РасчетыПоСотрудникам</content>
+  <content>Report.СоставБлюда</content>
+  <content>Catalog.ЗагружаемыеФИОСотрудников</content>
+</mdclass:Subsystem>

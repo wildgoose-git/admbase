@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05109b53-92e0-43d5-bb2b-73d7fa81047e">
+  <name>СправочникиЗагрузкаИзВнешнихИсточниковПолныеПрава</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники загрузка из внешних источников полные права</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

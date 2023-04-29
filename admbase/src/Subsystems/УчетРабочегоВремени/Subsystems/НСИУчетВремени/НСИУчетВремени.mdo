@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c66bf65f-5878-4fe2-b2b3-5522ac540ed4">
+  <name>НСИУчетВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Сотрудники</content>
+  <content>Document.НазначениеИндивидуальныхГрафиков</content>
+  <content>Catalog.Подразделения</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.УчетныеДанныеПодключений</content>
+  <content>Document.НазначениеПостоянныхГрафиков</content>
+  <content>Document.ОтражениеСостоянийСотрудников</content>
+  <content>Report.СостояниеСотрудников</content>
+  <content>Report.ГрафикиРаботыСотрудников</content>
+  <content>Report.СписокСотрудников</content>
+  <content>Catalog.ПричиныОтсутсвия</content>
+  <content>Enum.КатергорииОтсутствия</content>
+  <parentSubsystem>Subsystem.УчетРабочегоВремени</parentSubsystem>
+</mdclass:Subsystem>

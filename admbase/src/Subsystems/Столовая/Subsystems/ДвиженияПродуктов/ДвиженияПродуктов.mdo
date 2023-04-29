@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8653f39e-6b49-4c45-9bf7-1c47ac470e3a">
+  <name>ДвиженияПродуктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения продуктов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПоступлениеТоваров</content>
+  <content>Document.ПеремещениеТоваров</content>
+  <content>Document.РасходПродуктов</content>
+  <parentSubsystem>Subsystem.Столовая</parentSubsystem>
+</mdclass:Subsystem>

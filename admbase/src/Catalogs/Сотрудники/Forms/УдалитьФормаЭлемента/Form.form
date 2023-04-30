@@ -63,7 +63,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.НаименованияЗагрузок</segments>
+      <segments>Объект.УдалитьНаименованияЗагрузок</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
@@ -75,7 +75,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.НаименованияЗагрузок.LineNumber</segments>
+        <segments>Объект.УдалитьНаименованияЗагрузок.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
         <name>НаименованияЗагрузокНомерСтрокиРасширеннаяПодсказка</name>
@@ -125,7 +125,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.НаименованияЗагрузок.Наименование</segments>
+        <segments>Объект.УдалитьНаименованияЗагрузок.Наименование</segments>
       </dataPath>
       <extendedTooltip>
         <name>НаименованияЗагрузокНаименованиеРасширеннаяПодсказка</name>

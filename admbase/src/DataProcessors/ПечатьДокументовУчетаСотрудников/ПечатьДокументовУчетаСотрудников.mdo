@@ -10,4 +10,11 @@
     <value>Печать документов учета сотрудников</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <templates uuid="d5285991-1f7b-4cb9-b74d-a7ea99d3b35c">
+    <name>ПФ_MXL_КарточкаПроживающего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка проживающего</value>
+    </synonym>
+  </templates>
 </mdclass:DataProcessor>

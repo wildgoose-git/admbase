@@ -116,9 +116,19 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <commands uuid="148148c4-317c-4cc0-9768-f06b9fe90331">
+    <name>СведенияОСотрудниках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о сотрудниках</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <representation>Auto</representation>
+  </commands>
 </mdclass:InformationRegister>

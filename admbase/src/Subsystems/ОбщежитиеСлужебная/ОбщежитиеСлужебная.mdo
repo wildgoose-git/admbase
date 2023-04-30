@@ -17,4 +17,5 @@
   <content>CommonModule.ОбщежитиеФункцииСервер</content>
   <content>DataProcessor.ПечатьДокументовУчетаСотрудников</content>
   <content>InformationRegister.ЗанятыеМестаОбщежитие</content>
+  <content>CommonModule.КонсолидацияОбщегоНазначения</content>
 </mdclass:Subsystem>

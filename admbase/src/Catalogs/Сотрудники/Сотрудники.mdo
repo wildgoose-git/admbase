@@ -176,10 +176,10 @@
       <objectType typeId="d9f08ce8-b0d7-4a96-b817-e50c97feca7c" valueTypeId="4d7f7910-f526-40a1-be46-11311646b6bf"/>
       <rowType typeId="1035b4a7-1f32-4eda-8645-f2e6c0f94c3a" valueTypeId="afd2b702-2090-41cd-bf8e-dff545c70183"/>
     </producedTypes>
-    <name>НаименованияЗагрузок</name>
+    <name>УдалитьНаименованияЗагрузок</name>
     <synonym>
       <key>ru</key>
-      <value>Наименования загрузок</value>
+      <value>Удалить наименования загрузок</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>

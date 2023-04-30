@@ -539,10 +539,6 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.ДетальныеЗаписи.Место</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>ДетальныеЗаписиМестоПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ДетальныеЗаписиМестоРасширеннаяПодсказка</name>
             <id>40</id>
@@ -577,10 +573,6 @@
             <handlers>
               <event>StartChoice</event>
               <name>ДетальныеЗаписиМестоНачалоВыбора</name>
-            </handlers>
-            <handlers>
-              <event>StartListChoice</event>
-              <name>ДетальныеЗаписиМестоНачалоВыбораИзСписка</name>
             </handlers>
             <handlers>
               <event>ChoiceProcessing</event>

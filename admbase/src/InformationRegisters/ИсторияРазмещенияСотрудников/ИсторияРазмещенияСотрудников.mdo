@@ -9,10 +9,10 @@
     <recordType typeId="d47d8a40-807c-404d-87c7-7db92641ca26" valueTypeId="d8632cb5-68c2-43f1-bd94-5173d8c0d0a1"/>
     <recordManagerType typeId="ac3d62db-6fab-4bc4-bd71-6898d232a141" valueTypeId="f2834365-29c8-4b6b-93fb-b555ea3322ff"/>
   </producedTypes>
-  <name>РазмещениеСотрудников</name>
+  <name>ИсторияРазмещенияСотрудников</name>
   <synonym>
     <key>ru</key>
-    <value>Размещение сотрудников</value>
+    <value>История размещения сотрудников</value>
   </synonym>
   <editType>InDialog</editType>
   <standardAttributes>
@@ -51,6 +51,14 @@
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
   <writeMode>RecorderSubordinate</writeMode>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Размещение сотрудников</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Размещение сотрудников</value>
+  </extendedListPresentation>
   <resources uuid="2a5becac-3b40-4c90-97ea-eeca291dda53">
     <name>АдресРегистрации</name>
     <synonym>
@@ -79,7 +87,7 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <choiceParameterLinks>
       <name>Отбор.Владелец</name>
-      <field>InformationRegister.РазмещениеСотрудников.Resource.АдресРегистрации</field>
+      <field>InformationRegister.ИсторияРазмещенияСотрудников.Resource.АдресРегистрации</field>
     </choiceParameterLinks>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

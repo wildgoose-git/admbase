@@ -67,7 +67,7 @@
   <defaultObjectForm>Document.ЗаселениеСотрудников.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ЗаселениеСотрудников.Form.ФормаСписка</defaultListForm>
   <realTimePosting>Deny</realTimePosting>
-  <registerRecords>InformationRegister.РазмещениеСотрудников</registerRecords>
+  <registerRecords>InformationRegister.ИсторияРазмещенияСотрудников</registerRecords>
   <registerRecords>InformationRegister.ЗанятыеМестаОбщежитие</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

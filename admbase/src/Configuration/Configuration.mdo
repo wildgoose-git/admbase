@@ -34,7 +34,7 @@
   <defaultLanguage>Language.Русский</defaultLanguage>
   <briefInformation>
     <key>ru</key>
-    <value>Библиотека стандартных подсистем, редакция 3.1</value>
+    <value>Административные задачи</value>
   </briefInformation>
   <detailedInformation>
     <key>ru</key>
@@ -2430,7 +2430,7 @@
   <informationRegisters>InformationRegister.РасписаниеРаботыСтоловой</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныПоставщиков</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
-  <informationRegisters>InformationRegister.РазмещениеСотрудников</informationRegisters>
+  <informationRegisters>InformationRegister.ИсторияРазмещенияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.СведенияОСотрудниках</informationRegisters>
   <informationRegisters>InformationRegister.ЗанятыеМестаОбщежитие</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИзготовлениеБлюд</accumulationRegisters>

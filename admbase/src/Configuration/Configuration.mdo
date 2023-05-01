@@ -2052,6 +2052,7 @@
   <documents>Document.ЗаселениеСотрудников</documents>
   <documents>Document.ПеремещениеСотрудников</documents>
   <documents>Document.ВыселениеСотрудников</documents>
+  <documents>Document.РасчетСтоимостиПроживания</documents>
   <documentJournals>DocumentJournal.Взаимодействия</documentJournals>
   <documentJournals>DocumentJournal.СогласияНаОбработкуПерсональныхДанных</documentJournals>
   <enums>Enum.ВажностьПроблемыУчета</enums>
@@ -2441,6 +2442,7 @@
   <accumulationRegisters>AccumulationRegister.ЗакупкиУПоставщиков</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиПродуктовНаСкладах</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ПосещенияСтоловойPerco</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.СтоимостьПроживанияСотрудников</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВопросыДляАнкетирования</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач</chartsOfCharacteristicTypes>

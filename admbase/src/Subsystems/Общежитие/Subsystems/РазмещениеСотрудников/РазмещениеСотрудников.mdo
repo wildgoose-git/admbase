@@ -10,6 +10,5 @@
   <content>Document.ЗаселениеСотрудников</content>
   <content>Document.ПеремещениеСотрудников</content>
   <content>Document.ВыселениеСотрудников</content>
-  <content>Report.ЗанятостостьМест</content>
   <parentSubsystem>Subsystem.Общежитие</parentSubsystem>
 </mdclass:Subsystem>

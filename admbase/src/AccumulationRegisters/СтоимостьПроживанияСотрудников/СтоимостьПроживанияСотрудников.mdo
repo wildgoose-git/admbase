@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbdd1c71-6336-4e82-a973-88690c82acf1">
+  <producedTypes>
+    <selectionType typeId="91c4cd31-45d0-4321-9519-6218823b1d43" valueTypeId="a7062782-aee5-4d96-b7cb-50b4881b26e2"/>
+    <listType typeId="4e7263cf-5211-4871-a56f-3146f869cfe2" valueTypeId="9fcd39c0-2bde-40c4-8a23-c99dce1fdb9b"/>
+    <managerType typeId="cd56fcab-57ee-4379-9f7f-e4cc7d134bcf" valueTypeId="b17003ad-7a38-4492-aac5-01f569020e46"/>
+    <recordSetType typeId="0429af6b-e28f-4324-8308-8aaf1f0dc868" valueTypeId="b3fecf0f-0273-42cb-8310-dcdd9312e190"/>
+    <recordKeyType typeId="327b38a4-9e39-4f63-885f-a190da697a9f" valueTypeId="2ed6c27f-d89e-4c31-a620-7dc1e37cd023"/>
+    <recordType typeId="048fe924-d36a-4ff8-9e12-e9aceba11e0c" valueTypeId="48b8bb99-f5c2-4bc1-8e7f-cb117d9baa06"/>
+  </producedTypes>
+  <name>СтоимостьПроживанияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость проживания сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="59446b04-07fd-47d1-97fb-aa5e8d8cfe62">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="fdcef96d-50cb-4a67-8c7c-b21f5c383153">
+    <name>АдресаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адреса регистрации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АдресаРегистрации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7cf0e4ec-b6e8-482f-81a0-57468bab32a1">
+    <name>Комната</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комната</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КомнатыВагоны</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d5725b41-f81e-474d-895c-5d071145ca0e">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

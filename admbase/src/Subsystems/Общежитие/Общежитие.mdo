@@ -10,9 +10,9 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Общежитие</picture>
   </picture>
-  <content>InformationRegister.ИсторияРазмещенияСотрудников</content>
-  <content>InformationRegister.СведенияОСотрудниках</content>
   <content>Report.ТекущаяЗанятостьМест</content>
   <content>Report.СрокиДействияДокументов</content>
   <subsystems>РазмещениеСотрудников</subsystems>
+  <subsystems>НормативнаяИнформация</subsystems>
+  <subsystems>Финансы</subsystems>
 </mdclass:Subsystem>

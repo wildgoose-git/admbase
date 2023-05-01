@@ -207,42 +207,6 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="7607d7ea-7001-4740-bf89-7fcf5e7093b2">
-    <name>УдалитьФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="35997690-0e95-4a08-8588-4c2f560deee1">
-    <name>УдалитьФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="738881e5-0aa6-48a1-b709-d3389305c575">
-    <name>УдалитьФормаОбъединение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить форма объединение</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="2b9e1649-5222-49b5-85d4-0b4f231d7aa2">
-    <name>УдалитьФормаПодбора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить форма подбора</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="a36f4db3-c465-4f4f-a438-fdf82b3a972f">
     <name>ФормаЭлемента</name>
     <synonym>

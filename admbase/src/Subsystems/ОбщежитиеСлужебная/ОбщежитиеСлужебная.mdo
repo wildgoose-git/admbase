@@ -21,4 +21,6 @@
   <content>Report.ЗанятостостьМест</content>
   <content>Report.ТекущаяЗанятостьМест</content>
   <content>Report.СрокиДействияДокументов</content>
+  <content>AccumulationRegister.СтоимостьПроживанияСотрудников</content>
+  <content>Document.РасчетСтоимостиПроживания</content>
 </mdclass:Subsystem>

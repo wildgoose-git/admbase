@@ -121,10 +121,10 @@
   <defaultListForm>Catalog.Сотрудники.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.Сотрудники.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="f24f18d4-2cb8-4394-9d62-cb6874413e1c">
-    <name>Фамилия</name>
+    <name>УдалитьФамилия</name>
     <synonym>
       <key>ru</key>
-      <value>Фамилия</value>
+      <value>Удалить фамилия</value>
     </synonym>
     <type>
       <types>String</types>

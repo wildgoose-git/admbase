@@ -129,6 +129,9 @@
       <value>Сведения о сотрудниках</value>
     </synonym>
     <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
     <representation>Auto</representation>
   </commands>
 </mdclass:InformationRegister>

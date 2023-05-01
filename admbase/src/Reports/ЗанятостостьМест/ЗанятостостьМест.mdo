@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4aaa47b-8c2b-4b50-9308-e49ff0ae9fba">
+  <producedTypes>
+    <objectType typeId="3040e7f8-20a2-4d8e-b106-38c73584abb8" valueTypeId="733e1bfb-2e8e-410f-89c1-b83814b8bef2"/>
+    <managerType typeId="1c95c670-ab95-4656-93b0-97ae34f7e79e" valueTypeId="fa5f917b-4987-41e4-b88a-cc33acab7ac1"/>
+  </producedTypes>
+  <name>ЗанятостостьМест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Занятостость мест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗанятостостьМест.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ae425e23-9267-4546-b521-f6bcdc1a7bab">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

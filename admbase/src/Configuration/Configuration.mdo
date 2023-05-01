@@ -2185,6 +2185,9 @@
   <reports>Report.СоставБлюда</reports>
   <reports>Report.СоставМеню</reports>
   <reports>Report.РасчетыПоСотрудникам</reports>
+  <reports>Report.ЗанятостостьМест</reports>
+  <reports>Report.ТекущаяЗанятостьМест</reports>
+  <reports>Report.СрокиДействияДокументов</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.АктивныеПользователи</dataProcessors>
   <dataProcessors>DataProcessor.БлокировкаРаботыПользователей</dataProcessors>

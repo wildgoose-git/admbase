@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="decd3afc-4c14-4787-af41-313f556990de">
+  <producedTypes>
+    <objectType typeId="00ea9f1a-f482-42cb-9fdc-f220ca8c35b1" valueTypeId="052b2908-90bf-49c1-b877-a799e68ee32f"/>
+    <managerType typeId="0195d165-b7ae-4cc2-97bb-edb49a08c262" valueTypeId="ab61d43f-14ec-450d-a50e-afc89ebbd4e5"/>
+  </producedTypes>
+  <name>СрокиДействияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки действия документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СрокиДействияДокументов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e5336a23-79d0-4f32-ab3d-b2cfc5c45f58">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

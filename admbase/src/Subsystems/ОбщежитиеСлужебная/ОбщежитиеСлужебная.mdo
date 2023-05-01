@@ -18,4 +18,7 @@
   <content>DataProcessor.ПечатьДокументовУчетаСотрудников</content>
   <content>InformationRegister.ЗанятыеМестаОбщежитие</content>
   <content>CommonModule.КонсолидацияОбщегоНазначения</content>
+  <content>Report.ЗанятостостьМест</content>
+  <content>Report.ТекущаяЗанятостьМест</content>
+  <content>Report.СрокиДействияДокументов</content>
 </mdclass:Subsystem>

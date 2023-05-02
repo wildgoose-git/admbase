@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.РасчетСтоимостиПроживания</content>
+  <content>Document.ПриказОбУстанволенииСтоимостиПроживания</content>
   <parentSubsystem>Subsystem.Общежитие</parentSubsystem>
 </mdclass:Subsystem>

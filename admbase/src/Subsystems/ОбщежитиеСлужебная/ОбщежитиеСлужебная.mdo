@@ -23,4 +23,6 @@
   <content>Report.СрокиДействияДокументов</content>
   <content>AccumulationRegister.СтоимостьПроживанияСотрудников</content>
   <content>Document.РасчетСтоимостиПроживания</content>
+  <content>InformationRegister.СтоимостьПроживанияВОбщежитии</content>
+  <content>Document.ПриказОбУстанволенииСтоимостиПроживания</content>
 </mdclass:Subsystem>

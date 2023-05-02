@@ -2053,6 +2053,7 @@
   <documents>Document.ПеремещениеСотрудников</documents>
   <documents>Document.ВыселениеСотрудников</documents>
   <documents>Document.РасчетСтоимостиПроживания</documents>
+  <documents>Document.ПриказОбУстанволенииСтоимостиПроживания</documents>
   <documentJournals>DocumentJournal.Взаимодействия</documentJournals>
   <documentJournals>DocumentJournal.СогласияНаОбработкуПерсональныхДанных</documentJournals>
   <enums>Enum.ВажностьПроблемыУчета</enums>
@@ -2438,6 +2439,7 @@
   <informationRegisters>InformationRegister.ИсторияРазмещенияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.СведенияОСотрудниках</informationRegisters>
   <informationRegisters>InformationRegister.ЗанятыеМестаОбщежитие</informationRegisters>
+  <informationRegisters>InformationRegister.СтоимостьПроживанияВОбщежитии</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИзготовлениеБлюд</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗакупкиУПоставщиков</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиПродуктовНаСкладах</accumulationRegisters>

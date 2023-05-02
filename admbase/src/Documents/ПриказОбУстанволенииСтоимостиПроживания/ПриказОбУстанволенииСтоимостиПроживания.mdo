@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66357f60-7c0a-48e9-8c67-b2de8c4ff47d">
+  <producedTypes>
+    <objectType typeId="58015561-747f-42bd-958b-0e8222cd6556" valueTypeId="407d8923-45c6-421d-b6dd-c37ed2e0f88a"/>
+    <refType typeId="5319c1eb-f8a7-4eef-9e5f-ca7afe350699" valueTypeId="e4df1664-a9eb-4db7-a52e-76b319f1905b"/>
+    <selectionType typeId="fea897fb-657c-4f51-ba73-fd08bbd8b9c6" valueTypeId="398ceac9-0c0f-421a-96e1-85a1496179a7"/>
+    <listType typeId="57356fda-baa5-4619-82e5-58458bf65d9c" valueTypeId="63e1dff5-ff01-470f-a44c-960e3a072927"/>
+    <managerType typeId="e5a0629c-7e07-4da3-b48a-88fd509a5910" valueTypeId="a72128e1-e764-4d23-85c9-bb438bcc9e85"/>
+  </producedTypes>
+  <name>ПриказОбУстанволенииСтоимостиПроживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ об устанволении стоимости проживания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОбУстанволенииСтоимостиПроживания.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриказОбУстанволенииСтоимостиПроживания.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПриказОбУстанволенииСтоимостиПроживания.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.СтоимостьПроживанияВОбщежитии</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5a5fb292-ff4c-4dc3-8152-67f9e2023511">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="24f94978-2185-4930-878f-fd632ee1ad16">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="011bed51-c807-4151-a76b-a7e52d552056">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a370fd78-6dc4-4448-bb5f-e9c540767b5c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb30ed0c-9a58-4617-907e-451f123bf16d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="b62be086-7820-42cd-97b5-52329329f613">
+    <producedTypes>
+      <objectType typeId="9e2308c9-12ac-46f9-a63a-54c57ad42bbb" valueTypeId="acb0c1ef-7faf-4a0b-89f0-554680e8f017"/>
+      <rowType typeId="8946c9d0-44ed-4b26-a51e-9684f4e70f76" valueTypeId="f553f0ec-ceb1-48bc-a803-7111a7bc01bd"/>
+    </producedTypes>
+    <name>ДетальныеЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Детальные записи</value>
+    </synonym>
+    <attributes uuid="37266ae6-a1f8-4df6-9a64-aac69d8deb8a">
+      <name>АдресРегистрации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес регистрации</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.АдресаРегистрации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e1d7d9fa-6c1f-4a62-9884-8c003b8d94f8">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

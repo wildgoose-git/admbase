@@ -51,6 +51,14 @@
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
   <mainFilterOnPeriod>true</mainFilterOnPeriod>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения о сотрудниках (общежитие)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сведения о сотрудниках (общежитие)</value>
+  </listPresentation>
   <resources uuid="67da4211-354d-4dca-b9c5-20ac8a53db53">
     <name>СрокДействияРегистрации</name>
     <synonym>

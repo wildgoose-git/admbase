@@ -16,6 +16,14 @@
   </synonym>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Занятые места (общежитие)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Занятые места (общежитие)</value>
+  </listPresentation>
   <resources uuid="396634c0-9bf9-47aa-8633-4a421bb7ffb5">
     <name>Сотрудник</name>
     <synonym>

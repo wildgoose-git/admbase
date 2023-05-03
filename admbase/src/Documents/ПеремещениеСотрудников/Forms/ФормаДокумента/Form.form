@@ -154,6 +154,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.АдресРегистрации</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>АдресРегистрацииПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>АдресРегистрацииРасширеннаяПодсказка</name>
         <id>81</id>

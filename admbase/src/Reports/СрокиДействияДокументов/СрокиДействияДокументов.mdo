@@ -9,8 +9,8 @@
     <key>ru</key>
     <value>Сроки действия документов</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.СрокиДействияДокументов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
   <templates uuid="e5336a23-79d0-4f32-ab3d-b2cfc5c45f58">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

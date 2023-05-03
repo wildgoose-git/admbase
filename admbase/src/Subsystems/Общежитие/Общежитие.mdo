@@ -12,6 +12,7 @@
   </picture>
   <content>Report.ТекущаяЗанятостьМест</content>
   <content>Report.СрокиДействияДокументов</content>
+  <content>CommonCommand.ПанельОтчетовОбщежитие</content>
   <subsystems>РазмещениеСотрудников</subsystems>
   <subsystems>НормативнаяИнформация</subsystems>
   <subsystems>Финансы</subsystems>

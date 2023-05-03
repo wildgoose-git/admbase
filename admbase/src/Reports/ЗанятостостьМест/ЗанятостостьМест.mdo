@@ -9,8 +9,8 @@
     <key>ru</key>
     <value>Занятостость мест</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ЗанятостостьМест.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
   <templates uuid="ae425e23-9267-4546-b521-f6bcdc1a7bab">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

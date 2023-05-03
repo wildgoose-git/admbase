@@ -112,6 +112,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="f127c348-eaba-4abe-8d8d-d17275b6be53">
+    <name>ДатаЗаселения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заселения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="6a366fab-c6da-4eb8-a15a-9de974e99409">
     <name>СтоимостьПроживания</name>
     <synonym>
@@ -125,24 +143,6 @@
         <scale>2</scale>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="f127c348-eaba-4abe-8d8d-d17275b6be53">
-    <name>ДатаЗаселения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата заселения</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

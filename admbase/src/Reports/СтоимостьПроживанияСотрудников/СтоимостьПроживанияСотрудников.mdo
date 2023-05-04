@@ -10,6 +10,7 @@
     <value>Стоимость проживания сотрудников</value>
   </synonym>
   <mainDataCompositionSchema>Report.СтоимостьПроживанияСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
   <templates uuid="58e99028-3bc0-4de1-bd4f-628692194b91">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

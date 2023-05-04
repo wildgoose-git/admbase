@@ -1955,6 +1955,58 @@
       </edit>
     </columns>
   </attributes>
+  <attributes>
+    <name>ТаблицаОшибок</name>
+    <title>
+      <key>ru</key>
+      <value>Таблица ошибок</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>ФИОСотрудника</name>
+      <title>
+        <key>ru</key>
+        <value>ФИОСотрудника</value>
+      </title>
+      <id>12</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Сотрудник</name>
+      <title>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </title>
+      <id>13</id>
+      <valueType>
+        <types>CatalogRef.Сотрудники</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
   <formCommands>
     <name>ЗагрузитьCSVРогачево</name>
     <title>

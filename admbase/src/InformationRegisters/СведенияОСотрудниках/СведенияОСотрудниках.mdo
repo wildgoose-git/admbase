@@ -14,7 +14,10 @@
     <key>ru</key>
     <value>Сведения о сотрудниках</value>
   </synonym>
+  <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СведенияОСотрудниках.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОСотрудниках.Form.ФормаСписка</defaultListForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>
@@ -130,7 +133,25 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <commands uuid="148148c4-317c-4cc0-9768-f06b9fe90331">
+  <forms uuid="852b3549-8a23-444a-86ea-22a52748f7d7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d09fffb-3eb1-4be8-9d00-0c177571c564">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="466fca09-287f-460c-8cb2-51f4bc871131">
     <name>СведенияОСотрудниках</name>
     <synonym>
       <key>ru</key>

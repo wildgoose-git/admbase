@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06226acf-f372-45e6-873a-d9f2c2951355">
+  <producedTypes>
+    <objectType typeId="e626332c-e885-4dbc-92ae-e9b13236a3ca" valueTypeId="c22dd8e2-5096-4c17-a6fc-4847ec6907aa"/>
+    <managerType typeId="11b9d544-1c22-4f60-9628-cc3123960076" valueTypeId="021b3bbf-6ada-4213-b0e1-79b3d9757af9"/>
+  </producedTypes>
+  <name>КорректировкаЗагружаемыхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка загружаемых данных</value>
+  </synonym>
+</mdclass:DataProcessor>

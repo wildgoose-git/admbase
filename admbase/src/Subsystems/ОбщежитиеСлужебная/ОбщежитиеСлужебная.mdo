@@ -25,4 +25,5 @@
   <content>Document.РасчетСтоимостиПроживания</content>
   <content>InformationRegister.СтоимостьПроживанияВОбщежитии</content>
   <content>Document.ПриказОбУстанволенииСтоимостиПроживания</content>
+  <content>CommonForm.ВыборПериода</content>
 </mdclass:Subsystem>

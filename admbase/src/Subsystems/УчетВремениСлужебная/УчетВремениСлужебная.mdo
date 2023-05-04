@@ -49,4 +49,5 @@
   <content>InformationRegister.СводкаРабочегоВремени</content>
   <content>CommonForm.ВыборПериода</content>
   <content>CommonModule.СправочникиЗагрузкаИзВнешнихИсточниковПолныеПрава</content>
+  <content>DataProcessor.КорректировкаЗагружаемыхДанных</content>
 </mdclass:Subsystem>

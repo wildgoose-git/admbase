@@ -50,4 +50,5 @@
   <content>Report.РасчетыПоСотрудникам</content>
   <content>Report.СоставБлюда</content>
   <content>Catalog.ЗагружаемыеФИОСотрудников</content>
+  <content>CommonForm.ВыборПериода</content>
 </mdclass:Subsystem>

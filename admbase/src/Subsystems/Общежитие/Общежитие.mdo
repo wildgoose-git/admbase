@@ -13,6 +13,8 @@
   <content>Report.ТекущаяЗанятостьМест</content>
   <content>Report.СрокиДействияДокументов</content>
   <content>CommonCommand.ПанельОтчетовОбщежитие</content>
+  <content>Report.СтоимостьПроживанияСотрудников</content>
+  <content>CommonModule.ВариантыОтчетовПереопределяемый</content>
   <subsystems>РазмещениеСотрудников</subsystems>
   <subsystems>НормативнаяИнформация</subsystems>
   <subsystems>Финансы</subsystems>

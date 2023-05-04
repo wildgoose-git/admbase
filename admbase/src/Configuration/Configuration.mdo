@@ -2192,6 +2192,7 @@
   <reports>Report.ЗанятостостьМест</reports>
   <reports>Report.ТекущаяЗанятостьМест</reports>
   <reports>Report.СрокиДействияДокументов</reports>
+  <reports>Report.СтоимостьПроживанияСотрудников</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.АктивныеПользователи</dataProcessors>
   <dataProcessors>DataProcessor.БлокировкаРаботыПользователей</dataProcessors>
@@ -2263,6 +2264,7 @@
   <dataProcessors>DataProcessor.РасчетРабочегоВремени</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоСтоловая</dataProcessors>
   <dataProcessors>DataProcessor.ПечатьДокументовУчетаСотрудников</dataProcessors>
+  <dataProcessors>DataProcessor.КорректировкаЗагружаемыхДанных</dataProcessors>
   <informationRegisters>InformationRegister.АдминистративнаяИерархия</informationRegisters>
   <informationRegisters>InformationRegister.АдресныеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>

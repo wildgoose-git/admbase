@@ -107,6 +107,7 @@
     <key>ru</key>
     <value>Сотрудники</value>
   </listPresentation>
+  <hierarchical>true</hierarchical>
   <levelCount>2</levelCount>
   <codeLength>11</codeLength>
   <descriptionLength>100</descriptionLength>

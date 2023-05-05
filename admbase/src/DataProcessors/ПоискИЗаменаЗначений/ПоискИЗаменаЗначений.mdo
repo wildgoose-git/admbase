@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00b946ee-0e59-4cb6-a04f-1f2a6418c05e">
+  <producedTypes>
+    <objectType typeId="fd512b50-ea6c-4f35-942d-ad84ef3f5202" valueTypeId="2400363f-d82a-4a55-98eb-c4a782c0c5bb"/>
+    <managerType typeId="ed64e57f-bfb2-40d1-8780-e678b77b66bd" valueTypeId="6aba5224-e693-43b3-8b2d-094bffdfa651"/>
+  </producedTypes>
+  <name>ПоискИЗаменаЗначений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск и замена значений</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПоискИЗаменаЗначений.Form.Форма</defaultForm>
+  <auxiliaryForm>DataProcessor.ПоискИЗаменаЗначений.Form.Форма</auxiliaryForm>
+  <attributes uuid="4384e688-2b8b-4fdf-8410-7b54c20e1abb">
+    <name>НайденныеСсылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Найденные ссылки</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4f180458-79eb-4558-85a6-81cfa00adacd">
+    <name>ВыполнятьВТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять в транзакции</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1d93fd41-d568-4f5e-8f57-41b24295a48e">
+    <name>ОтключатьКонтрольЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключать контроль записи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f094411-3174-441a-91e3-01f090288383">
+    <name>ПояснятьПроцесс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснять процесс подробно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="fca9aae1-952c-405a-a400-92cc7bf41fb5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

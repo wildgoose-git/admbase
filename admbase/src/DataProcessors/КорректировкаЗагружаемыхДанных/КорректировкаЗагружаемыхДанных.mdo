@@ -9,4 +9,14 @@
     <key>ru</key>
     <value>Корректировка загружаемых данных</value>
   </synonym>
+  <defaultForm>DataProcessor.КорректировкаЗагружаемыхДанных.Form.Форма</defaultForm>
+  <forms uuid="af5cf5d2-fa66-4680-8425-20792480c72d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:DataProcessor>

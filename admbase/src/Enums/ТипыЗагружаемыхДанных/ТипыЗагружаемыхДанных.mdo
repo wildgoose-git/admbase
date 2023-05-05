@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f8aa082-2358-4fdd-9d97-fa09d87c5a70">
+  <producedTypes>
+    <refType typeId="0f79876d-f8b6-474c-9164-3625783bddc9" valueTypeId="d282a4ec-feab-4c4b-bc52-a1807acb6e9d"/>
+    <listType typeId="e1cec1b0-0a3e-40e0-a5c0-8b720a32dba6" valueTypeId="0d8ccf45-e99b-4400-8b33-97af67c534f1"/>
+    <managerType typeId="fac8c2ff-db66-4025-bc82-dca582ad8a43" valueTypeId="aa49a5f3-a80a-4069-94b1-ab8dfd0b12d1"/>
+  </producedTypes>
+  <name>ТипыЗагружаемыхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы загружаемых данных</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cc4e352d-8c18-4841-99c9-c603b50f9868">
+    <name>СправочникДолжности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник должности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="15f274e1-6959-4607-a91e-768e42995357">
+    <name>СправочникПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник подразделения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d0f3aa92-8713-483a-9779-d98346232f01">
+    <name>СправочникСотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник сотрудники</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

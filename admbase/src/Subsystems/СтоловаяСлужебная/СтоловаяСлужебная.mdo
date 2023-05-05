@@ -51,4 +51,8 @@
   <content>Report.СоставБлюда</content>
   <content>Catalog.ЗагружаемыеФИОСотрудников</content>
   <content>CommonForm.ВыборПериода</content>
+  <content>DataProcessor.ПоискИЗаменаЗначений</content>
+  <content>DataProcessor.КорректировкаЗагружаемыхДанных</content>
+  <content>Enum.ТипыЗагружаемыхДанных</content>
+  <content>Catalog.ИсключаемыеИзЗагрузкиДанные</content>
 </mdclass:Subsystem>

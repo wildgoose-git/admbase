@@ -50,4 +50,7 @@
   <content>CommonForm.ВыборПериода</content>
   <content>CommonModule.СправочникиЗагрузкаИзВнешнихИсточниковПолныеПрава</content>
   <content>DataProcessor.КорректировкаЗагружаемыхДанных</content>
+  <content>DataProcessor.ПоискИЗаменаЗначений</content>
+  <content>Enum.ТипыЗагружаемыхДанных</content>
+  <content>Catalog.ИсключаемыеИзЗагрузкиДанные</content>
 </mdclass:Subsystem>

@@ -1972,12 +1972,29 @@
       <common>true</common>
     </edit>
     <columns>
+      <name>Сотрудник</name>
+      <title>
+        <key>ru</key>
+        <value>Загрузить как</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>CatalogRef.Сотрудники</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
       <name>ФИОСотрудника</name>
       <title>
         <key>ru</key>
-        <value>ФИОСотрудника</value>
+        <value>ФИО Сотрудника</value>
       </title>
-      <id>12</id>
+      <id>4</id>
       <valueType>
         <types>String</types>
         <stringQualifiers/>
@@ -1990,14 +2007,14 @@
       </edit>
     </columns>
     <columns>
-      <name>Сотрудник</name>
+      <name>СоздатьНовый</name>
       <title>
         <key>ru</key>
-        <value>Сотрудник</value>
+        <value>Создать новый</value>
       </title>
-      <id>13</id>
+      <id>5</id>
       <valueType>
-        <types>CatalogRef.Сотрудники</types>
+        <types>Boolean</types>
       </valueType>
       <view>
         <common>true</common>
@@ -2006,6 +2023,41 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>НеЗагружать</name>
+      <title>
+        <key>ru</key>
+        <value>Не загружать</value>
+      </title>
+      <id>6</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>АдресВХранилище</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес в хранилище</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>ЗагрузитьCSVРогачево</name>

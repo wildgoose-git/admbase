@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3dafa7c-81e8-4935-ad88-65b3a14ee704">
+  <producedTypes>
+    <objectType typeId="f8ebefbb-9fe2-482f-b2bb-312c6aa88def" valueTypeId="6946b683-033e-49c9-8a3f-02d0c562dd4e"/>
+    <refType typeId="7429e545-e6db-4bfe-9c4c-9dcbd37c1c11" valueTypeId="db4ad08f-a1f3-4b1e-8b71-05559eeb8530"/>
+    <selectionType typeId="d4642f4b-32c1-4150-9ab0-95e3f346b543" valueTypeId="1ff6e3a3-e87c-4693-9a85-8719c663edc6"/>
+    <listType typeId="4b739310-4c86-4b64-8254-f14c3a5028d7" valueTypeId="c7b95711-551e-4afb-955d-18c366cc155b"/>
+    <managerType typeId="6bdafcb1-c1de-460a-bfe9-c37517d574e3" valueTypeId="2bc00705-ef5a-48a7-9afb-aeb99ca0bbd5"/>
+  </producedTypes>
+  <name>ИсключаемыеИзЗагрузкиДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исключаемые из загрузки данные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИсключаемыеИзЗагрузкиДанные.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Исключаемые из загрузки данные</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Исключаемые из загрузки данные</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b76695d2-da0b-4fcf-b102-9df381a25b34">
+    <name>ТипЗагружаемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип загружаемых данных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЗагружаемыхДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

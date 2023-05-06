@@ -30,4 +30,5 @@
   <content>DataProcessor.КорректировкаЗагружаемыхДанных</content>
   <content>Enum.ТипыЗагружаемыхДанных</content>
   <content>Catalog.ИсключаемыеИзЗагрузкиДанные</content>
+  <content>CommonModule.КонсолидацияКлиентСервер</content>
 </mdclass:Subsystem>

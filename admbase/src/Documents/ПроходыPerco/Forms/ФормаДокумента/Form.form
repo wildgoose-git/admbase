@@ -1997,7 +1997,9 @@
       <id>4</id>
       <valueType>
         <types>String</types>
-        <stringQualifiers/>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -2040,24 +2042,6 @@
         <common>true</common>
       </edit>
     </columns>
-  </attributes>
-  <attributes>
-    <name>АдресВХранилище</name>
-    <title>
-      <key>ru</key>
-      <value>Адрес в хранилище</value>
-    </title>
-    <id>12</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <formCommands>
     <name>ЗагрузитьCSVРогачево</name>

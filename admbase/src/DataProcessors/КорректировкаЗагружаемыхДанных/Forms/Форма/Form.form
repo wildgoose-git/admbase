@@ -410,6 +410,7 @@
       </extendedTooltip>
       <commandName>Form.Command.ЗавершитьОК</commandName>
       <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <groupHorizontalAlign>Right</groupHorizontalAlign>
@@ -524,7 +525,7 @@
       <valueType>
         <types>String</types>
         <stringQualifiers>
-          <length>150</length>
+          <length>100</length>
         </stringQualifiers>
       </valueType>
       <view>

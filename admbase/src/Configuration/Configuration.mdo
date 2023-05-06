@@ -1297,6 +1297,7 @@
   <commonModules>CommonModule.ОбщежитиеФункцииСервер</commonModules>
   <commonModules>CommonModule.КонсолидацияОбщегоНазначения</commonModules>
   <commonModules>CommonModule.КонсолидацияКлиентСервер</commonModules>
+  <commonModules>CommonModule.КонсолидацияТаблицыЗначений</commonModules>
   <commonAttributes>CommonAttribute.КомментарийЯзык1</commonAttributes>
   <commonAttributes>CommonAttribute.КомментарийЯзык2</commonAttributes>
   <commonAttributes>CommonAttribute.НаименованиеЯзык1</commonAttributes>
@@ -2012,9 +2013,11 @@
   <catalogs>Catalog.АдресаРегистрации</catalogs>
   <catalogs>Catalog.ВидыНоменклатуры</catalogs>
   <catalogs>Catalog.Должности</catalogs>
-  <catalogs>Catalog.ЗагружаемыеФИОСотрудников</catalogs>
   <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
+  <catalogs>Catalog.ЗагружаемыеФИОСотрудников</catalogs>
+  <catalogs>Catalog.ИсключаемыеИзЗагрузкиДанные</catalogs>
   <catalogs>Catalog.КатегорииМеню</catalogs>
+  <catalogs>Catalog.КомнатыВагоны</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.МестаХранения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
@@ -2025,8 +2028,6 @@
   <catalogs>Catalog.СхемыРаботы</catalogs>
   <catalogs>Catalog.УчетныеДанныеПодключений</catalogs>
   <catalogs>Catalog.ТипыДокументов</catalogs>
-  <catalogs>Catalog.КомнатыВагоны</catalogs>
-  <catalogs>Catalog.ИсключаемыеИзЗагрузкиДанные</catalogs>
   <documents>Document.Анкета</documents>
   <documents>Document.Встреча</documents>
   <documents>Document.ЗапланированноеВзаимодействие</documents>

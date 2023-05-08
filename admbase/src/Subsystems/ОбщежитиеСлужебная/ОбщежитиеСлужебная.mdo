@@ -32,4 +32,5 @@
   <content>Catalog.ИсключаемыеИзЗагрузкиДанные</content>
   <content>CommonModule.КонсолидацияКлиентСервер</content>
   <content>CommonModule.КонсолидацияТаблицыЗначений</content>
+  <content>CommonPicture.Общежитие</content>
 </mdclass:Subsystem>
